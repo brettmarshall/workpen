@@ -1,0 +1,15 @@
+{
+  "name": "AngularBase",
+  "version": "0.0.1",
+  "description": "This is a starting point for an AngularJs project.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brettmarshall/angularBase.git"
+  },
+  "author": "Brett Marshall",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.1"
+  }
+}

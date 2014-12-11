@@ -1,0 +1,33 @@
+.mejs-overlay-button {
+	border-radius: 50%;
+	border: 5px solid rgb(255, 255, 255);
+	background: none!important;
+	margin: -40px 0 0 -40px;
+	padding-left: 5px;
+	width: 80px;
+	height: 80px;
+	opacity: .3;
+}
+
+.mejs-overlay:hover .mejs-overlay-button {
+    opacity: 1;
+}
+
+.mejs-controls .mejs-playpause-button button,
+.mejs-controls .mejs-button button {
+	margin: 0;
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+	left: -8px;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
+	background-color: $theme-color;
+}

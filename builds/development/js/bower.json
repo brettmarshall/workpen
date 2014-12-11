@@ -1,0 +1,22 @@
+{
+  "name": "\"Angular Boilerplate\"",
+  "version": "0.0.1",
+  "homepage": "http://brett-marshall.com/",
+  "authors": [
+    "Brett Marshall <brett@madebygrizzly.com>"
+  ],
+  "description": "\"AngularJs boilerplate\"",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.6",
+    "angular-route": "~1.3.6",
+    "angular-animate": "~1.3.6",
+    "angular-audio": "~1.2.1",
+    "firebase": "~2.0.6",
+    "angularfire": "~0.9.0"
+  },
+  "resolutions": {
+    "angular": "1.3.6"
+  }
+}

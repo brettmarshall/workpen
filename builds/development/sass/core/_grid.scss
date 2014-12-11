@@ -1,0 +1,183 @@
+/* ============================================
+    S I M P L E
+
+
+ * The template is for rendering single's.
+ *
+ * @package     Simple
+ * @version     1.0
+ * @author      Constantine Kiriaze
+ * @website     github.com/kiriaze/simple
+
+    Browsers: ie8, ie10, ie11, FF, Safari, Chrome
+
+    Dependancies :
+
+        Variables below defined in _base.scss
+
+            $container-class: 'foo';
+            $column-class: 'bar';
+            $gutter: 3rem; // spacing between columns
+            $max-columns: 6; //  @for loop class declarations
+            breakpoint mixins
+
+.columns-{percentage, double digit}
+    .columns-70, .columns-30 = totaling to 100
+
+.columns-{single digit number}
+    .columns-1
+    .columns-2, .columns-2
+    .columns-4, .columns-4, .columns-4, .columns-4
+
+============================================ */
+
+
+//-------------------------------------------------------
+// GRID SETTINGS
+//-------------------------------------------------------
+
+// this is the fixed gutter between columns
+$gutter: 3rem !default;
+$docWidth: 100% !default;
+
+// this sets your class names
+$container-class: "row" !default;
+$column-class: "columns" !default;
+$max-columns: 12 !default;
+
+// Grid check
+$gridDebug: false;
+
+//-------------------------------------------------------
+// GRID MIXINS
+//-------------------------------------------------------
+@mixin set-gutter($gutter) {
+    margin-left: -$gutter;
+    padding-left: $gutter;
+}
+
+@mixin grid() {
+    @include set-gutter($gutter);
+    @include clearfix;
+    @if( $gridDebug == true ) {
+        background: red; // testing purposes
+    }
+}
+
+@mixin column() {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: $gutter;
+    @if( $gridDebug == true ) {
+        background: wheat; // testing purposes
+    }
+}
+
+@mixin columns($num) {
+
+    @include column();
+
+    @include breakpoint($small) {
+
+        @if ( round($num) == $num ) { // if whole number for even # cols
+            width: column-width($num, $docWidth);
+        } @else { // for mixed width cols, data-columns=".3"
+            width: ($num * $docWidth);
+        }
+
+    }
+
+}
+
+@mixin third($num) {
+    @include column();
+
+    @include breakpoint($small) {
+        width: third-width($num, $docWidth);
+    }
+}
+
+// set the proportions you want to use
+@mixin grid-setup() {
+
+    @for $i from 1 through $max-columns {
+        [data-columns='#{$i}'],
+        [class~='#{$column-class}-#{$i}'] {
+            @include columns(1);
+            // MediaQueries
+            @include breakpoint($small) {
+                @include columns($i);
+            }
+        }
+
+    }
+
+    // Percentages for mixed widths
+    @for $i from 1 through 10 {
+        [data-columns='.#{$i}'],
+        [class~='#{$column-class}-#{$i}0'] {
+            @include columns(1);
+            // MediaQueries
+            @include breakpoint($small) {
+                @include columns($i/10);
+            }
+        }
+    }
+
+}
+
+//-------------------------------------------------------
+// GRID FUNCTIONS
+//-------------------------------------------------------
+
+@function column-width($num, $width) {
+    @return ( $width / $num );
+}
+
+@function third-width($num, $width) {
+    @return $num * ( $width / 3 );
+}
+
+
+//-------------------------------------------------------
+// CLASS AND DATA DELEGATIONS
+//-------------------------------------------------------
+
+[class~='#{$container-class}'],
+[data-layout='grid'] {
+    @include grid();
+}
+
+.large-gutter {
+    @include set-gutter($gutter*2);
+}
+
+.half-gutter {
+    @include set-gutter($gutter/2);
+}
+
+.no-gutter {
+    @include set-gutter(0);
+}
+
+.reset-gutter {
+    @include set-gutter($gutter);
+}
+
+// reset for list grids
+ul.#{$container-class},
+ul[data-layout='grid'],
+ol.#{$container-class},
+ol[data-layout='grid'] {
+    padding-left: 0;
+    list-style: none;
+}
+
+li[class~='#{$column-class}-'] {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+// Run grid
+@include grid-setup();

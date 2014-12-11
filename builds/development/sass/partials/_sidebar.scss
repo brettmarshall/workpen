@@ -1,0 +1,49 @@
+// global sidebar styles
+aside[role="complementary"] {
+	.search-form {
+		input{
+			padding: 10px;
+			&[type="search"] {
+				border-radius: 0;
+				-webkit-appearance: none;
+				border: 1px solid #ddd;
+				width: 70%;
+				margin-right: 0%;
+				border-right: 0;
+			}
+			&[type="submit"]{
+				border: 1px solid #aaa;
+				color: white;
+				font-weight: 100;
+				text-transform: uppercase;
+				width: 25%;
+				margin: 0;
+			}
+		}
+	}
+	.widget{
+		padding: 0 0 2em;
+		&:first-of-type {
+			.widgettitle {
+				padding-top: 0;
+			}
+		}
+		.widgettitle {
+			font-size: 1.3em;
+			font-weight: 600;
+		}
+		ul {
+			li {
+				a {
+					color: #666;
+					&:hover {
+						color: #444;
+					}
+				}
+			}
+		}
+		p {
+			font-size: .9em;
+		}
+	}
+}

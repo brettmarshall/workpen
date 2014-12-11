@@ -1,0 +1,153 @@
+html,
+body {
+
+}
+
+body{
+
+}
+
+.container,
+#header,
+#footer {
+    margin: 0 auto;
+}
+
+// main container
+#main {
+    background: white;
+}
+
+// temp for testing
+[class^='#{$column-class}-'] {
+    margin-bottom: 1rem;
+}
+
+.pagination {
+    &:first-child {
+        a {
+            &:before {
+                content: 'Newer posts';
+            }
+        }
+    }
+    &:last-child {
+        a {
+            &:before {
+                content: 'Older posts';
+            }
+        }
+    }
+    &.infinite-scroll-pagination {
+        text-align: center;
+        a {
+            @extend .btn;
+            &:before {
+                content: '';
+            }
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+
+// added by flexible content
+[class*='text-align-'] {
+    text-align: center;
+}
+
+@include breakpoint($medium) {
+    .text-align-left {
+        text-align: left!important;
+    }
+    .text-align-right {
+        text-align: right!important;
+    }
+    .text-align-center {
+        text-align: center!important;
+    }
+}
+
+/* -- Use this wrapper if you want to block-out a column with padding
+Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
+.island {
+    padding: 3vmax 10vw;
+}
+
+[data-layout="grid"],
+[class=#{$container-class}] {
+
+    &.wide{
+        max-width: $large;
+    }
+
+    .primary{
+        @include columns(1);
+    }
+
+    .sidebar,
+    aside[role="complementary"] {
+        width: 100%;
+        @include breakpoint($medium) {
+            @include third(1);
+        }
+    }
+
+    article[role="article"] {
+
+        &.post{
+
+        }
+
+        &:first-of-type {
+
+        }
+    }
+
+}
+
+//  if body has class has-sidebar, set primary container to 2/3 width
+.has-sidebar {
+    .primary {
+        width: 100%;
+        @include breakpoint($medium) {
+            @include third(2);
+        }
+    }
+}
+
+
+// // parallax scroll
+// // <div class="parallax" style="background-image: url();"></div>
+// // <div class="parallax-content"></div>
+// .parallax {
+//     background-size: 100% auto;
+//     background-position: center 0;
+//     width: 50%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     z-index: 0;
+//     overflow: hidden;
+//     background-color: black;
+//     background-image: url(../images/slider-bg.png);
+//     background-size: auto;
+// }
+// .parallax-content {
+//     background: white;
+//     z-index: 1;
+//     position: relative;
+//     @include breakpoint($small) {
+//         margin-left: 50%;
+//     }
+// }

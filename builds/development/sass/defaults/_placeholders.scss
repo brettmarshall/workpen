@@ -1,0 +1,62 @@
+/* ============================================
+    P L A C E H O L D E R S
+============================================ */
+
+/*  Photo Styles
+============================================ */
+%vignette {
+    box-shadow: inset 0px 0px 85px rgba(0,0,0,.5);
+}
+
+/*  No Flick Webkit
+============================================ */
+%no-flick {
+    transform: translate3d(0,0,0);
+}
+
+/*  Vertical Align
+============================================ */
+%valign {
+    // Vertically center elements, ie9+
+    // set height on parent, currently done with js
+    // Target elements individually
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    // Target container - in near future... look at _grid.scss
+    // display: flex;
+    // align-items: center;
+    // flex-flow: row wrap;
+}
+
+%ib {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 1rem; // reset
+    text-align: left; // reset
+}
+
+.no-flick {
+    @extend %no-flick;
+}
+
+.valign {
+    @extend %valign;
+}
+
+.horizontal-center {
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.absolute-center {
+    position: absolute!important;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

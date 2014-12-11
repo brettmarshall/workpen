@@ -1,0 +1,216 @@
+article.post {
+
+    @include clearfix();
+    .post-content {
+        p {
+
+        }
+    }
+    header {
+        display: block;
+        h6 {
+            display: none;
+        }
+        h3 {
+            font-weight: 600;
+            text-transform: none;
+            padding-top: 0;
+            a {
+                color: $dark-grey;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            .edit-link a {
+                color: #aaa;
+                font-size: 1rem;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 1px;
+            }
+        }
+        .post-meta {
+            padding: 0% 0 4%;
+        }
+    }
+    figure {
+        &.post-thumbnail {
+            @include breakpoint($medium) {
+                img {
+                    float: left;
+                    margin-right: 2rem;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .post-excerpt {
+        padding: 0 0 20px 0;
+        @include font-size(20);
+        font-weight: 400;
+        .read-more {
+            font-size: .9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+    footer {
+        // clear: both;
+        .post-meta {
+            padding: 2% 0;
+        }
+    }
+    .post-meta {
+        .meta-label {
+            @extend %ib;
+            margin-right: 2%;
+            @include font-size(16);
+            color: #222;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            a,
+            time {
+                color: #aaa;
+                font-weight: 500;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            &:after {
+                content: ''; // was '.'
+            }
+            &.meta-author {
+                &:before {
+                    content: 'Posted by: ';
+                }
+            }
+            &.meta-time {
+                &:before {
+                    content: 'Date: ';
+                }
+            }
+            &.meta-category {
+                &:before {
+                    content: ' Category: ';
+                }
+            }
+            &.meta-wordcount {
+
+            }
+            &.meta-reading-time {
+
+            }
+            &.meta-view-count {
+
+            }
+            &.meta-tags {
+                &:before {
+                    content: 'Tags: ';
+                }
+            }
+        }
+    }
+    .social-share {
+        li {
+            margin: 0 2% 0 0;
+            a {
+                color: #ccc;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            // hide span 'share'
+            &:first-of-type {
+                display: none;
+            }
+        }
+    }
+    &.format-link {
+        header + a {
+
+        }
+    }
+    &.format-video {
+        figure {
+            float: none; // for responsive aspect to work
+        }
+    }
+    &.format-audio {
+
+    }
+    &.format-image {
+
+    }
+    &.format-quote {
+
+    }
+    &.format-gallery {
+        .slider {
+            margin: 0px auto;
+            &:hover {
+                & ~ .controls {
+                    opacity: 1;
+                    a {
+                        &[rel="prev"]{
+                            left: 20px;
+                        }
+                        &[rel="next"]{
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .controls {
+            transition: $transition;
+            opacity: 0;
+            z-index: 99999;
+            a {
+                color: white;
+                &[rel="prev"]{
+                    left: 0px;
+                }
+                &[rel="next"]{
+                    right: 0px;
+                }
+            }
+            &:hover {
+                opacity: 1;
+                a {
+                    &[rel="prev"]{
+                        left: 20px;
+                    }
+                    &[rel="next"]{
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &.format-link,
+    &.format-video,
+    &.format-audio,
+    &.format-quote,
+    &.format-gallery {
+        header, footer, .social-share {
+            // display: none;
+        }
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}
+
+.post-pagination,
+.pagination {
+
+    li {
+
+        &:last-of-type{
+
+        }
+    }
+}

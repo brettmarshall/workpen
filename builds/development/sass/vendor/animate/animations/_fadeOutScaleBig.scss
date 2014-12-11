@@ -1,0 +1,19 @@
+@keyframes fadeOutScaleBig {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+@mixin fadeOutScaleBig($duration, $delay, $function, $fill, $visibility) {
+	animation-name: fadeOutScaleBig;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}

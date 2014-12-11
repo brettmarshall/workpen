@@ -1,0 +1,16 @@
+@keyframes lightSpeedOut {
+	0% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+	100% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
+}
+
+@mixin lightSpeedOut($duration, $delay, $fill, $visibility) {
+    animation-name: lightSpeedOut;
+
+    $function: ease-in;
+
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
+}

@@ -1,0 +1,19 @@
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@mixin slideInRight($duration, $delay, $function, $fill, $visibility) {
+	animation-name: slideInRight;
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}

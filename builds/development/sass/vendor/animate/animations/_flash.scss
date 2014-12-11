@@ -1,0 +1,13 @@
+@keyframes flash {
+	0%, 50%, 100% {opacity: 1;}	
+	25%, 75% {opacity: 0;}
+}
+
+@mixin flash($duration, $delay, $function, $fill, $visibility) {
+	animation-name: flash;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}

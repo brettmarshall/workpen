@@ -1,0 +1,88 @@
+/*=====================================================
+
+Wordpress Required Styles
+
+======================================================*/
+.aligncenter,
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.alignleft,
+a img.alignleft {
+    display: block;
+    @include breakpoint($medium) {
+        float:left;
+    }
+}
+
+.alignright,
+a img.alignright {
+    margin: 0 0 20px;
+    display: block;
+    @include breakpoint($medium) {
+        float: right;
+        margin: 5px 0 20px 20px;
+    }
+}
+
+.alignnone,
+.alignleft,
+a img.alignnone,
+a img.alignleft {
+    margin: 0 0 20px;
+    @include breakpoint($medium) {
+        margin: 5px 20px 20px 0;
+    }
+}
+
+.wp-caption {
+    width: 100% !important;
+    overflow: hidden;
+}
+.wp-caption.alignnone {
+
+}
+.wp-caption.alignleft {
+
+}
+.wp-caption.alignright {
+
+}
+.wp-caption img {
+    @include breakpoint($small) {
+
+    }
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    padding: 10px;
+    line-height: 1.5;
+    border-top: 3px solid black;
+    font-size: 13px;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.wp-caption-dd {
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 4px 5px;
+    margin: 0;
+}
+
+.sticky {
+    background: #f7f7f7;
+    padding: 0 10px 10px;
+}
+    .sticky h2 {
+        padding-top: 10px;
+    }
+
+.bypostauthor {
+
+}

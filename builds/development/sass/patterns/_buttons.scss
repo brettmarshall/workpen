@@ -1,0 +1,108 @@
+.btn {
+    @extend %btn;
+    text-align: center;
+
+    // theme specific
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    @include font-size(16);
+    color: $dark-grey;
+    background: none;
+    border: 1px solid $dark-grey;
+
+    padding: 0em 2em;
+    line-height: 2.5em;
+
+    &[data-scroll-to="top"] {
+        transition: $transition;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        padding: 0em 0.75em;
+        margin: 0;
+        height: 1.8em;
+        line-height: 1.75em;
+        font-size: 1.4em;
+        border: none;
+        background: $theme-color;
+        color: white;
+        box-sizing: border-box;
+        &.fadeIn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &:hover {
+        background: $dark-grey;
+        border-color: $dark-grey;
+        color: #fff;
+    }
+
+    &.solid {
+        background: $theme-color;
+        border-color: $theme-color;
+        color: white;
+        &:hover {
+            background: $secondary-color;
+            border-color: $secondary-color;
+            color: white;
+        }
+        &.invert {
+            background: white;
+            color: $dark-grey;
+            &:hover {
+                background: $secondary-color;
+                border-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+
+    &.invert {
+        color: white;
+        border-color: white;
+        &:hover {
+            background: #fff;
+            color: $dark-grey;
+            border-color: white;
+        }
+    }
+
+    .dark &,
+    [class*='colored-overlay-'] & {
+        @extend .invert;
+    }
+
+    &.no-content {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    // social shortcode plugin
+    &.flip { // add extra i.icon
+        width: 45px;
+        height: 40px;
+        overflow: hidden;
+        padding: 0!important;
+        text-align: center;
+        i {
+            position: relative;
+            top: 0;
+            display: block;
+            height: 100%;
+            line-height: 40px;
+            transition: $transition;
+        }
+        &:hover i {
+            top: -40px;
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@mixin fadeIn($duration, $delay, $function, $fill, $visibility) {
+	animation-name: fadeIn;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}
