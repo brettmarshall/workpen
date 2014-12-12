@@ -50,16 +50,22 @@ myApp.controller("ListController", ["$scope", "$firebase",
 
         }
 
-        $scope.finishTask = function(data)  {
-            var taskKey = '';
+        $scope.finishTask = function($event)  {
 
-            console.log($scope)
+            // gets the tasks that is being clicked
+            var input = $event.target;
+            var taskKey = jQuery(input).attr('data-key');
 
-            // sync.$update({
-            //     taskCompleted : true
-            // }).then(function(data)  {
+            // gets the task location
+            var taskKeyUpdate = tasks.child(taskKey);
 
-            // });
+            // wraps taskKeyUpdate with firebase so it can access the $update function
+            taskKeyUpdate = $firebase(taskKeyUpdate);
+
+            // updates the task to completed
+            taskKeyUpdate.$update({
+                taskCompleted : true
+            });
         }
 
 
