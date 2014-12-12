@@ -1,8 +1,10 @@
 <section ng-controller="RegisterController">
 	
-	<form ng-submit="register()">
-		<input type="email" ng-model="email"/>
-		<input type="password" ng-model="password" />
+	<form ng-submit="register()" novalidate>
+		<input type="text" ng-model="firstname" placeholder="First Name" />
+		<input type="text" ng-model="lastname"placeholder="Last Name" />
+		<input type="email" ng-model="email"placeholder="Email Address" />
+		<input type="password" ng-model="password" placeholder="Password" />
 		<button type="submit">Register</button>
 	</form>
 

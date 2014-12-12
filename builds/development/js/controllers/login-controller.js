@@ -1,16 +1,22 @@
-myApp.controller("LoginController", ["$scope", "$firebase",
-  function($scope, $firebase) {
-    // create an AngularFire reference to the data
-    var sync = $firebase(ref);
-    // download the data into a local object
-    $scope.data = sync.$asObject();
+myApp.controller("LoginController", ["$scope", "$firebase", "$firebaseAuth",
+  function($scope, $firebase, $firebaseAuth) {
+
+    $scope.authObj = $firebaseAuth(ref);
 
     $scope.login = function(stuff)	{
     	
-    	var email = $scope.email;
-    	var password = $scope.password;
+        $scope.authObj.$authWithPassword({
+          email: $scope.email,
+          password: $scope.password
 
-    	
+        }).then(function(authData) {
+          window.location = '/#/home';
+
+        }).catch(function(error) {
+          $scope.error = error;
+        });
+
+
     }
   }
 ]);

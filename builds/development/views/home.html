@@ -1,13 +1,15 @@
-<section ng-controller="LoginController">
+<section ng-controller="ListController">
   <h1>AngularBase</h1>
-  <p>Get Started with AngularJs.</p>
 
-  <hr style="width: 100%; margin-left: 0; left: 0;">
+  <form ng-submit="createTask()" name="creatListForm">
+  	<label>Add Task</label>
+  	<input type="text" ng-model="task" id="task-create" autofocus>
+  	<button type="submit">+</button>
+  </form>
 
-  <ul>
-    <li><h3>List of Resources</h3></li>
-    <li><a href="https://angularjs.org/" target="_blank">AngularJs</a></li>
-    <li><a href="https://www.firebase.com/docs/web/libraries/angular/index.html" target="_blank">AngularFire</a></li>
-    <li><a href="http://danielstern.github.io/ngAudio/" target="_blank">ngAudio</a></li>
-  </ul>
+  <div class="tasks">
+  	<ul>
+  		<li ng-repeat="task in tasks" ng-class="{ 'complete': task.taskCompleted }">{{ task.task }} <input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="finishTask()" data-key="{{ task.taskKey }}" /></li>
+  	</ul>
+  </div>
 </section>
