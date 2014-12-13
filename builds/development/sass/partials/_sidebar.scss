@@ -1,0 +1,11 @@
+.sidebar	{
+	width: 100%;
+
+	@include breakpoint($small)	{
+		width: 30%;
+		float: left;
+		position: fixed;
+		height: 100%;
+		background: #eee;
+	}
+}

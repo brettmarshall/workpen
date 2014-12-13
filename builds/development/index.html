@@ -17,16 +17,25 @@
 
 </head>
 <body>
-  <header>
-    <nav class="cf" ng-include="'views/nav.html'"></nav>
-  </header>
-  <div class="page">
-    <div class="container">
-      <div class="row">
-        <main class="columns-80 centerAlign" ng-view></main>
+  <section class="app">
+    <aside class="sidebar">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
+    </aside>    
+    <div class="main">
+      <header>
+        <nav class="cf nav" ng-include="'views/nav.html'"></nav>
+      </header>    
+      <div class="container">
+        <div class="row">
+          <main class="columns-80 centerAlign" ng-view></main>     
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <script src="js/app.js"></script>
   <script src="js/controllers/login-controller.js"></script>
   <script src="js/controllers/register-controller.js"></script>

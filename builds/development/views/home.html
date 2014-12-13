@@ -1,4 +1,4 @@
-<section ng-controller="ListController">
+<section ng-controller="ListController" class="col-md-10 col-md-offset-1">
 	<img ng-src="http://www.gravatar.com/avatar/{{avatar}}" alt="{{ userInfo.firstname + ' ' + userInfo.lastname }}">
   <h1>Hello, {{ userInfo.firstname }}</h1>
 
@@ -13,4 +13,6 @@
   		<li ng-repeat="task in tasks" ng-class="{ 'complete': task.taskCompleted }">{{ task.task }} <input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="finishTask($event)" data-key="{{ task.taskKey }}" /></li>
   	</ul>
   </div>
+
+
 </section>
