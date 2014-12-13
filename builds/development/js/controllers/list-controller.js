@@ -1,5 +1,5 @@
-myApp.controller("ListController", ["$scope", "$firebase",
-    function($scope, $firebase) {
+myApp.controller("ListController", ["$scope", "$firebase", "md5",
+    function($scope, $firebase, md5) {
 
     // gets user information
     var authData = ref.getAuth();
@@ -22,7 +22,26 @@ myApp.controller("ListController", ["$scope", "$firebase",
         // reads the tasks as an object
         $scope.tasks = sync.$asObject();
 
+        // will expose the results of the createTask.then obj function to the next .then function
         var key = '';
+
+        // gets user's email, hashes the email and preps it to be inserted
+        // into an img to show user's gravatar avatar
+        $scope.getAvatar = function(data)   {
+            var userInfo = user.child('info');
+
+
+
+            userInfo.on("value", function(snapshot) {
+                $scope.userInfo = snapshot.val();
+                $scope.avatar = md5.createHash($scope.userInfo.email || '');
+
+            }, function (errorObject) {
+              console.log("The read failed: " + errorObject.code);
+            });                 
+        }
+        // runs the getAvatar function on "load"
+        $scope.getAvatar();
 
         // create a task
         $scope.createTask = function(data)  {

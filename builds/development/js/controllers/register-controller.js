@@ -31,7 +31,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
           // creates an object to hold all the user's
           // information
-          ref.child('users/' + authData.uid).set({
+          ref.child('users/' + authData.uid).$set({
             info: {
               firstname : firstname,
               lastname : lastname,

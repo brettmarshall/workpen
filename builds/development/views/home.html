@@ -1,5 +1,6 @@
 <section ng-controller="ListController">
-  <h1>AngularBase</h1>
+	<img ng-src="http://www.gravatar.com/avatar/{{avatar}}" alt="{{ userInfo.firstname + ' ' + userInfo.lastname }}">
+  <h1>Hello, {{ userInfo.firstname }}</h1>
 
   <form ng-submit="createTask()" name="creatListForm">
   	<label>Add Task</label>
