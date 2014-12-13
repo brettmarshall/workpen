@@ -1,14 +1,16 @@
 {
-  "name": "AngularBase",
+  "name": "WorkPen",
   "version": "0.0.1",
-  "description": "This is a starting point for an AngularJs project.",
+  "description": "This is an web app to help me better organize my work day.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brettmarshall/angularBase.git"
+    "url": "https://github.com/brettmarshall/workpen.git"
   },
   "author": "Brett Marshall",
   "devDependencies": {
     "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-sass": "^1.2.4",
     "gulp-util": "^2.2.20",
     "gulp-webserver": "^0.8.1"
   }
