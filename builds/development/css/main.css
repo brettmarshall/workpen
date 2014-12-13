@@ -1,26 +1,10 @@
-.animated {
-  -webkit-animation-duration: 0.35s;
-  animation-duration: 0.35s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-  .animated.infinite {
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; }
-
-/*	Border Radius
-============================================ */
-/************************
-BREAKPOINTS - getsimple.io
-************************/
-/*  Strip unit
-============================================ */
-/*  Font Size (px, em, rem)
-============================================ */
-/*  Buttons
-============================================ */
-/*	Sticky Footer
-============================================ */
+/* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
 header {
   background: red;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+  color: #000;
+  padding-left: 10px; }
+
+
+/*# sourceMappingURL=main.css.map */

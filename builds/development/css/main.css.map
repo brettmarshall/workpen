@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials/_header.scss"],"names":[],"mappings":";AAAA;EACC,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,OAAO;EACP,cAAc","file":"main.css","sourcesContent":["header\t{\n\tbackground: red;\n\ttransform: scale(1.1);\n\ttransition: all 0.3s ease-out;\n\tcolor: #000;\n\tpadding-left: 10px;\n}"],"sourceRoot":"/source/"}

@@ -1,4 +1,7 @@
 header	{
 	background: red;
 	transform: scale(1.1);
+	transition: all 0.3s ease-out;
+	color: #000;
+	padding-left: 10px;
 }
