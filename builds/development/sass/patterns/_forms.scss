@@ -9,6 +9,7 @@ input[type="checkbox"]	{
 	position: relative;
 	outline: none;
 	cursor: pointer;
+	transition: all 0.3s ease-in;
 
 	&:focus	{
 		outline: none;
@@ -19,7 +20,7 @@ input[type="checkbox"]	{
 		border-color: transparent;
 		// transform: scale(1.5);
 		transition: all 0.3s ease-out;
-		-webkit-animation-name: experience;
+		-webkit-animation-name: pulse;
 		-webkit-animation-duration: 0.3s;
 		-webkit-animation-timing-function: ease;
 		-webkit-animation-delay: 0s;            
@@ -41,14 +42,62 @@ input[type="checkbox"]	{
 	}
 }
 
-@-webkit-keyframes experience {
-	0% {
-		-webkit-transform: scale(1); 
-	}
-	60% {
-		-webkit-transform: scale(1.5); 
-	}
-	100% {
-		-webkit-transform: scale(1);
-	}
+input[type="text"]	{
+	padding: 1rem 1.5rem;
+
+	&:focus	{
+		outline: none;
+	}	
 }
+
+
+// Add Task Form 
+
+.task-form	{
+	width: 100%;
+	clear: both;
+	margin: 0 auto ($space * 3) auto;
+	text-align: center;
+	font-size: 0;
+
+
+	@include breakpoint($small)	{
+		width: 80%;
+	}
+
+	@include breakpoint($large)	{
+		width: 60%;
+	}	
+
+	input[type="text"]	{
+		width: 70%;
+		display: inline-block;
+		font-size: 1.5rem;
+		height: 5rem;
+	}
+
+	button	{
+		@extend .aqua-gradient;
+		width: 30%;
+		display: inline-block;
+		font-size: 1.5rem;
+		height: 5rem;
+		border: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

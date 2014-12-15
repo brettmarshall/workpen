@@ -5,9 +5,8 @@
 		<span class="byline">- {{ author }}</span>
 	</blockquote>
 
-	<form ng-submit="createTask()" name="creatListForm">
-		<label>Add Task</label>
-		<input type="text" ng-model="task" id="task-create" autofocus>
+	<form ng-submit="createTask()" name="creatListForm" class="task-form">
+		<input type="text" ng-model="task" id="task-create" placeholder="Add Task">
 		<button type="submit">+</button>
 	</form>
 

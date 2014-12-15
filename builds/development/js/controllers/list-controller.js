@@ -20,7 +20,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
         var sync = $firebase(tasks);
 
         // reads the tasks as an object
-        $scope.tasks = sync.$asObject();
+        $scope.tasks = sync.$asArray();
         
         // will expose the results of the createTask.then obj function to the next .then function
         var key = '';
@@ -104,7 +104,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
               });                          
         }
 
-        $scope.designQuote();
+        $scope.designQuote();       
 
 
     } else {

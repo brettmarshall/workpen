@@ -366,21 +366,35 @@ blockquote {
   float: left;
   width: 100%; }
 
+/* line 77, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.aqua-gradient, .task-form button {
+  background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+  background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+  background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
+  background-color: #96DEDA;
+  box-shadow: 0px 2px 0px 0px #3EA49F;
+  color: #2E323E;
+  border-bottom: none;
+  text-decoration: none;
+  transition: all 0.3s ease-out; }
+  /* line 88, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+  .aqua-gradient:hover, .task-form button:hover {
+    background: #50C9C3;
+    box-shadow: 0px 2px 0px 0px transparent;
+    transition: all 0.3s ease-in; }
+
 @-webkit-keyframes pulse {
   /* line 2, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
   0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
+    -webkit-transform: scale(1); }
 
-  /* line 7, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
+  /* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  60% {
+    -webkit-transform: scale(1.5); }
 
-  /* line 12, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 8, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
+    -webkit-transform: scale(1); } }
 
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
 .container {
@@ -1426,22 +1440,23 @@ input[type="checkbox"] {
   height: 24px;
   position: relative;
   outline: none;
-  cursor: pointer; }
-  /* line 13, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  cursor: pointer;
+  transition: all 0.3s ease-in; }
+  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   input[type="checkbox"]:focus {
     outline: none; }
-  /* line 17, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   input[type="checkbox"]:checked {
     background: transparent;
     border-color: transparent;
     transition: all 0.3s ease-out;
-    -webkit-animation-name: experience;
+    -webkit-animation-name: pulse;
     -webkit-animation-duration: 0.3s;
     -webkit-animation-timing-function: ease;
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal; }
-    /* line 29, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
     input[type="checkbox"]:checked:before {
       content: " ";
       border: 2px solid #2E323E;
@@ -1454,18 +1469,39 @@ input[type="checkbox"] {
       -webkit-transform: rotate(45deg);
       transition: all 0.3s ease-in; }
 
-@-webkit-keyframes experience {
-  /* line 45, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
-  0% {
-    -webkit-transform: scale(1); }
-
+/* line 45, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+input[type="text"] {
+  padding: 1rem 1.5rem; }
   /* line 48, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
-  60% {
-    -webkit-transform: scale(1.5); }
+  input[type="text"]:focus {
+    outline: none; }
 
-  /* line 51, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
-  100% {
-    -webkit-transform: scale(1); } }
+/* line 56, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+.task-form {
+  width: 100%;
+  clear: both;
+  margin: 0 auto 9rem auto;
+  text-align: center;
+  font-size: 0; }
+  @media (min-width: 768px) {
+    .task-form {
+      width: 80%; } }
+  @media (min-width: 1280px) {
+    .task-form {
+      width: 60%; } }
+  /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  .task-form input[type="text"] {
+    width: 70%;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 5rem; }
+  /* line 79, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  .task-form button {
+    width: 30%;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 5rem;
+    border: none; }
 
 /* === Rows === */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */

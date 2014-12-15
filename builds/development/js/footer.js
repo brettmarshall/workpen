@@ -79,6 +79,15 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         // gets the data specific to the logged in user
         var user = new Firebase("https://workpen.firebaseio.com/users/" + user_id);
 
+        // gets the users tasks
+        var tasks = user.child('tasks');
+
+        // syncs the data between the app and firebase, also provides help functions
+        var sync = $firebase(tasks);
+
+        // reads the tasks as an object
+        $scope.tasks = sync.$asArray();        
+
         // gets user's email, hashes the email and preps it to be inserted
         // into an img to show user's gravatar avatar
         $scope.getAvatar = function(data)   {
@@ -203,7 +212,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
         var sync = $firebase(tasks);
 
         // reads the tasks as an object
-        $scope.tasks = sync.$asObject();
+        $scope.tasks = sync.$asArray();
         
         // will expose the results of the createTask.then obj function to the next .then function
         var key = '';
@@ -287,7 +296,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
               });                          
         }
 
-        $scope.designQuote();
+        $scope.designQuote();       
 
 
     } else {
