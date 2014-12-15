@@ -35,7 +35,7 @@ input[type="checkbox"]	{
 			height: 24px;
 			bottom: 0;
 			left: 7px;
-			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
 			transition: all 0.3s ease-in;
 		}
 	}
