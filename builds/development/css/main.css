@@ -1471,12 +1471,14 @@ input[type="checkbox"] {
 
 /* line 45, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
 input[type="text"] {
-  padding: 1rem 1.5rem; }
-  /* line 48, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  padding: 1rem 1.5rem;
+  -webkit-appearance: none;
+  border-radius: 0px; }
+  /* line 50, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   input[type="text"]:focus {
     outline: none; }
 
-/* line 56, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 58, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
 .task-form {
   width: 100%;
   clear: both;
@@ -1489,13 +1491,13 @@ input[type="text"] {
   @media (min-width: 1280px) {
     .task-form {
       width: 60%; } }
-  /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 74, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   .task-form input[type="text"] {
     width: 70%;
     display: inline-block;
     font-size: 1.5rem;
     height: 5rem; }
-  /* line 79, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 81, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   .task-form button {
     width: 30%;
     display: inline-block;

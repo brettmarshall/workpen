@@ -44,6 +44,8 @@ input[type="checkbox"]	{
 
 input[type="text"]	{
 	padding: 1rem 1.5rem;
+	-webkit-appearance: none;
+	border-radius: 0px;
 
 	&:focus	{
 		outline: none;
