@@ -1,0 +1,54 @@
+/* === Forms === */
+
+input[type="checkbox"]	{
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid $dark-grey;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	outline: none;
+	cursor: pointer;
+
+	&:focus	{
+		outline: none;
+	}
+
+	&:checked	{
+		background: transparent;
+		border-color: transparent;
+		// transform: scale(1.5);
+		transition: all 0.3s ease-out;
+		-webkit-animation-name: experience;
+		-webkit-animation-duration: 0.3s;
+		-webkit-animation-timing-function: ease;
+		-webkit-animation-delay: 0s;            
+		-webkit-animation-iteration-count: 1;   
+		-webkit-animation-direction: normal;		
+
+		&:before	{
+			content: " ";
+			border: 2px solid $dark-grey;
+			border-width: 0 2px 2px 0;
+			position: absolute;
+			width: 12px;
+			height: 24px;
+			bottom: 0;
+			left: 7px;
+			transform: rotate(45deg);
+			transition: all 0.3s ease-in;
+		}
+	}
+}
+
+@-webkit-keyframes experience {
+	0% {
+		-webkit-transform: scale(1); 
+	}
+	60% {
+		-webkit-transform: scale(1.5); 
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}

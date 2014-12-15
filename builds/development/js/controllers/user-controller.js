@@ -30,7 +30,9 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         // runs the getAvatar function on "load"
         $scope.getAvatar(); 
 
-    }   
+    } else  {
+      window.location = '/#/login';
+    } 
 
   }
 ]);

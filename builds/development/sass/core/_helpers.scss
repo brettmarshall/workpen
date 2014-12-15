@@ -49,3 +49,37 @@
 		margin-bottom: $space * 5;		
 	}	
 }
+
+.clearfix	{
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 0px;
+
+	&:before, &:after	{
+		display: table;
+		content: "";
+		width: 100%;
+		float: left;
+	}
+}
+
+.wrapper	{
+	background-image: -webkit-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+	background-image: -o-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+	background-image: linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.06);
+	padding: $space;
+	float: left;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+

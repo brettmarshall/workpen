@@ -21,7 +21,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
 
         // reads the tasks as an object
         $scope.tasks = sync.$asObject();
-
+        
         // will expose the results of the createTask.then obj function to the next .then function
         var key = '';
 

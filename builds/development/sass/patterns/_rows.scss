@@ -1,0 +1,48 @@
+/* === Rows === */
+
+.tasks	{
+	float: left;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.tasks ul	{
+	width: 100%;
+	clear: both;
+	float: left;
+}
+
+.tasks li	{
+	padding-top: $space / 2;
+	padding-bottom: $space / 2;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	color: $grey;
+	float: left;
+	width: 100%;
+	clear: both;
+
+	&:last-child	{
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	&:first-child	{
+		padding-top: 0;
+	}	
+
+	.task-status	{
+		float: left;
+		width: 20%;
+	}
+
+	.task-info	{
+		float: left;	
+		width: 60%;
+	}
+
+	.task-actions	{
+		float: left;
+		width: 20%;
+	}		
+}

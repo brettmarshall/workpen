@@ -343,6 +343,45 @@ blockquote {
     .space-cinco {
       margin-bottom: 15rem; } }
 
+/* line 53, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.clearfix {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: 0px; }
+  /* line 59, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    width: 100%;
+    float: left; }
+
+/* line 67, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.wrapper {
+  background-image: -webkit-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+  background-image: -o-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+  background-image: linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  float: left;
+  width: 100%; }
+
+@-webkit-keyframes pulse {
+  /* line 2, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  /* line 7, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+
+  /* line 12, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
 .container {
   margin-right: auto;
@@ -1266,8 +1305,8 @@ blockquote {
   .user-snapshot .user-name {
     width: 100%;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
     color: #8A8A8A;
     font-weight: 300;
     line-height: 1em; }
@@ -1287,7 +1326,10 @@ blockquote {
       /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
       .nav > ul > li:first-child > a {
         border-top: 1px solid #474C5F; }
-      /* line 58, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      /* line 60, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      .nav > ul > li:last-child > a {
+        border-bottom: none; }
+      /* line 66, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
       .nav > ul > li > a {
         display: block;
         width: 100%;
@@ -1301,7 +1343,7 @@ blockquote {
         border-bottom: 1px solid #474C5F;
         text-transform: uppercase;
         position: relative; }
-        /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:before {
           content: " ";
           width: 26px;
@@ -1309,31 +1351,57 @@ blockquote {
           position: absolute;
           left: 3rem;
           top: 16px; }
-        /* line 83, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 89, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a:after {
+          width: 50px;
+          height: 25px;
+          position: absolute;
+          right: 3rem;
+          top: 16px;
+          border: 1px solid #2E323E;
+          border-radius: 8px;
+          text-align: center;
+          line-height: 25px; }
+        /* line 103, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board:before {
           background: url('../img/my-board.svg'); }
-        /* line 87, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 107, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.my-board:after {
+          content: attr(data-count);
+          background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+          background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+          background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
+          box-shadow: 0px 2px 0px 0px #3EA49F;
+          border: none;
+          color: #2E323E; }
+        /* line 119, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:before {
           background: url('../img/my-board-active.svg'); }
-        /* line 94, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 123, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.my-board.active:after {
+          background: none;
+          box-shadow: none;
+          border: 1px solid #2E323E;
+          line-height: 22px; }
+        /* line 136, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.settings:before {
           background: url('../img/settings.svg');
           width: 24px; }
-        /* line 99, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 141, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.settings.active:before {
           background: url('../img/settings-active.svg'); }
-        /* line 107, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 149, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.logout:before {
           background: url('../img/logout.svg');
           width: 23px;
           height: 23px; }
-        /* line 115, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 157, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:hover {
           text-decoration: none;
           color: #CFD0D1;
           transition: all 0.3s ease-out;
           background: rgba(0, 0, 0, 0.2); }
-        /* line 122, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 164, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.active {
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1343,10 +1411,104 @@ blockquote {
           color: #2E323E;
           border-bottom: none;
           text-decoration: none; }
-          /* line 132, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          /* line 174, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
           .nav > ul > li > a.active:hover {
             background: #50C9C3;
             box-shadow: 0px 2px 0px 0px #50C9C3; }
+
+/* === Forms === */
+/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #2E323E;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  outline: none;
+  cursor: pointer; }
+  /* line 13, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  input[type="checkbox"]:focus {
+    outline: none; }
+  /* line 17, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  input[type="checkbox"]:checked {
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s ease-out;
+    -webkit-animation-name: experience;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal; }
+    /* line 29, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    input[type="checkbox"]:checked:before {
+      content: " ";
+      border: 2px solid #2E323E;
+      border-width: 0 2px 2px 0;
+      position: absolute;
+      width: 12px;
+      height: 24px;
+      bottom: 0;
+      left: 7px;
+      transform: rotate(45deg);
+      transition: all 0.3s ease-in; }
+
+@-webkit-keyframes experience {
+  /* line 45, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  0% {
+    -webkit-transform: scale(1); }
+
+  /* line 48, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  60% {
+    -webkit-transform: scale(1.5); }
+
+  /* line 51, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  100% {
+    -webkit-transform: scale(1); } }
+
+/* === Rows === */
+/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+.tasks {
+  float: left;
+  display: block;
+  width: 100%;
+  clear: both; }
+
+/* line 10, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+.tasks ul {
+  width: 100%;
+  clear: both;
+  float: left; }
+
+/* line 16, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+.tasks li {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #8A8A8A;
+  float: left;
+  width: 100%;
+  clear: both; }
+  /* line 25, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li:first-child {
+    padding-top: 0; }
+  /* line 34, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li .task-status {
+    float: left;
+    width: 20%; }
+  /* line 39, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li .task-info {
+    float: left;
+    width: 60%; }
+  /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li .task-actions {
+    float: left;
+    width: 20%; }
 
 
 /*# sourceMappingURL=main.css.map */

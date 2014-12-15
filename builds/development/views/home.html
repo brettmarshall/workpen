@@ -1,21 +1,29 @@
 <section ng-controller="ListController">
-  <blockquote class="large-blockquote">
-  	<span class="design-quote">Design Quote</span>
-  	<p>{{ quote | quoteencode}}</p>
-  	<span class="byline">- {{ author }}</span>
-  </blockquote>
+	<blockquote class="large-blockquote space-double">
+		<span class="design-quote">Design Quote</span>
+		<p>{{ quote | quoteencode}}</p>
+		<span class="byline">- {{ author }}</span>
+	</blockquote>
 
-  <form ng-submit="createTask()" name="creatListForm">
-  	<label>Add Task</label>
-  	<input type="text" ng-model="task" id="task-create" autofocus>
-  	<button type="submit">+</button>
-  </form>
+	<form ng-submit="createTask()" name="creatListForm">
+		<label>Add Task</label>
+		<input type="text" ng-model="task" id="task-create" autofocus>
+		<button type="submit">+</button>
+	</form>
 
-  <div class="tasks">
-  	<ul>
-  		<li ng-repeat="task in tasks" ng-class="{ 'complete': task.taskCompleted }">{{ task.task }} <input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="finishTask($event)" data-key="{{ task.taskKey }}" /></li>
-  	</ul>
-  </div>
+	<div class="wrapper">
+		<div class="tasks">
+			<ul>
+				<li ng-repeat="task in tasks" ng-class="{ 'complete': task.taskCompleted }">
+					<div class="task-status">
+						<input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="finishTask($event)" data-key="{{ task.taskKey }}" />
+					</div>
+					<div class="task-info">{{ task.task }}</div>
+					<div class="task-actions"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 
 </section>
