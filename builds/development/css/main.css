@@ -1,15 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab:400,300,700);
 /*!
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  background-image: -webkit-linear-gradient(#E8E8E8 30%, #C1C1C1 100%);
+  background-image: -o-linear-gradient(#E8E8E8 30%, #C1C1C1 100%);
+  background-image: linear-gradient(#E8E8E8 30%, #C1C1C1 100%); }
 
-/* line 8, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 11, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 body {
-  margin: 0; }
-  /* line 11, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+  margin: 0;
+  min-height: 100%; }
+  /* line 15, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
   body * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -18,247 +23,325 @@ body {
     margin: 0;
     padding: 0; }
 
-/* line 20, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 26, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 script {
   display: none; }
 
-/* line 36, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 42, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 42, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 48, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline; }
 
-/* line 46, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 52, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 51, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 57, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 [hidden], template {
   display: none; }
 
-/* line 54, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 60, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a {
   background-color: transparent; }
 
-/* line 58, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 64, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a:active, a:hover {
   outline: 0; }
 
-/* line 61, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 67, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 65, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 71, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 b, strong {
   font-weight: bold; }
 
-/* line 68, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 74, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 dfn {
   font-style: italic; }
 
-/* line 71, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 77, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 75, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 81, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 79, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 85, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 small {
   font-size: 80%; }
 
-/* line 83, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 89, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 89, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 95, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 sup {
   top: -0.5em; }
 
-/* line 92, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 98, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 sub {
   bottom: -0.25em; }
 
-/* line 95, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 101, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 img {
   border: 0; }
 
-/* line 98, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 104, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 101, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 107, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 figure {
   margin: 1em 40px; }
 
-/* line 104, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 110, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
-/* line 110, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 116, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 pre {
   overflow: auto; }
 
-/* line 116, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 122, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-/* line 124, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 130, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0; }
 
-/* line 129, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 135, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button {
   overflow: visible; }
 
-/* line 133, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 139, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button, select {
   text-transform: none; }
 
-/* line 139, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 145, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-/* line 144, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 150, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button[disabled], html input[disabled] {
   cursor: default; }
 
-/* line 148, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 154, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 152, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 158, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input {
   line-height: normal; }
 
-/* line 156, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 162, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input[type="checkbox"], input[type="radio"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
-/* line 163, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 169, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/* line 166, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 172, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 173, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 179, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 176, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 182, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 181, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 187, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 legend {
   border: 0;
   padding: 0; }
 
-/* line 185, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 191, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 textarea {
   overflow: auto; }
 
-/* line 188, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 194, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 optgroup {
   font-weight: bold; }
 
-/* line 191, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 197, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 196, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 202, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 td, th {
   padding: 0; }
 
-/* line 199, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 205, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 205, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 211, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 210, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 216, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-/* line 214, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 220, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 body {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
   background-color: #ffffff; }
 
-/* line 223, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 229, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
-/* line 228, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 234, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a {
   color: #337ab7;
   text-decoration: none; }
 
-/* line 233, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 239, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a:hover, a:focus {
   color: #23527c;
   text-decoration: underline; }
 
-/* line 237, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 243, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
-/* line 242, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 248, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 figure {
   margin: 0; }
 
-/* line 245, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 251, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 img {
   vertical-align: middle; }
 
-/* line 248, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 254, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee; }
+
+/* === Typography === */
+/* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+html {
+  font-family: 'Roboto', sans-serif; }
+
+/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+blockquote {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
+  text-align: left; }
+  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote * {
+    width: 100%; }
+  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200; }
+  /* line 25, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote.large-blockquote .design-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #8A8A8A;
+    text-transform: uppercase;
+    font-weight: 600; }
+  /* line 33, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote.large-blockquote p {
+    font-size: 3.2rem; }
+  /* line 37, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote.large-blockquote .byline {
+    font-size: 2.2rem;
+    text-align: right; }
+
+/* === Helpers === */
+/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.circle {
+  border-radius: 50%; }
+
+/* line 7, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.center-align {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+/* line 13, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.space-default {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .space-default {
+      margin-bottom: 3rem; } }
+
+/* line 21, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.space-double {
+  margin-bottom: 3rem; }
+  @media (min-width: 768px) {
+    .space-double {
+      margin-bottom: 6rem; } }
+
+/* line 29, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.space-triple {
+  margin-bottom: 4.5rem; }
+  @media (min-width: 768px) {
+    .space-triple {
+      margin-bottom: 9rem; } }
+
+/* line 37, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.space-quad {
+  margin-bottom: 9rem; }
+  @media (min-width: 768px) {
+    .space-quad {
+      margin-bottom: 12rem; } }
+
+/* line 45, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+.space-cinco {
+  margin-bottom: 12rem; }
+  @media (min-width: 768px) {
+    .space-cinco {
+      margin-bottom: 15rem; } }
 
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
 .container {
@@ -1134,29 +1217,6 @@ hr {
 .clearfix:after, .container:after, .container-fluid:after, .row:after {
   clear: both; }
 
-/* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
-header {
-  background: #ddd;
-  transition: all 0.3s ease-out;
-  color: #000;
-  padding-left: 10px;
-  margin-bottom: 30px; }
-
-/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
-.nav {
-  width: 100%; }
-  /* line 12, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
-  .nav > ul {
-    width: 100%;
-    text-align: center; }
-    /* line 16, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
-    .nav > ul > li {
-      display: inline-block;
-      padding: 8px 16px; }
-      /* line 20, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
-      .nav > ul > li > a {
-        color: #000; }
-
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .app {
   width: 100%;
@@ -1168,25 +1228,125 @@ header {
 /* line 9, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .main {
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 3rem; }
   @media (min-width: 768px) {
     .main {
       float: left;
       left: 30%;
       width: 70%;
       position: relative;
-      overflow-y: scroll; } }
+      overflow-y: scroll;
+      padding: 6rem; } }
 
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
 .sidebar {
-  width: 100%; }
+  width: 100%;
+  background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
+  background-image: -o-linear-gradient(#424757 0%, #262934 100%);
+  background-image: linear-gradient(#424757 0%, #262934 100%); }
   @media (min-width: 768px) {
     .sidebar {
       width: 30%;
       float: left;
       position: fixed;
-      height: 100%;
-      background: #eee; } }
+      height: 100%; } }
+  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  .sidebar .avatar {
+    margin-bottom: 1.5rem; }
+
+/* line 19, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+.user-snapshot {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #fff; }
+  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  .user-snapshot .user-name {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    color: #8A8A8A;
+    font-weight: 300;
+    line-height: 1em; }
+
+/* line 37, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+.nav {
+  width: 100%; }
+  /* line 40, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  .nav > ul {
+    width: 100%;
+    text-align: left; }
+    /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+    .nav > ul > li {
+      display: block;
+      width: 100%;
+      float: left; }
+      /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      .nav > ul > li:first-child > a {
+        border-top: 1px solid #474C5F; }
+      /* line 58, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      .nav > ul > li > a {
+        display: block;
+        width: 100%;
+        float: left;
+        padding: 1.8rem 3rem 1.8rem 6.5rem;
+        font-size: 1.4rem;
+        color: #8A8A8A;
+        letter-spacing: 0.86px;
+        line-height: 19px;
+        transition: all 0.3s ease-in;
+        border-bottom: 1px solid #474C5F;
+        text-transform: uppercase;
+        position: relative; }
+        /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a:before {
+          content: " ";
+          width: 26px;
+          height: 24px;
+          position: absolute;
+          left: 3rem;
+          top: 16px; }
+        /* line 83, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.my-board:before {
+          background: url('../img/my-board.svg'); }
+        /* line 87, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.my-board.active:before {
+          background: url('../img/my-board-active.svg'); }
+        /* line 94, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.settings:before {
+          background: url('../img/settings.svg');
+          width: 24px; }
+        /* line 99, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.settings.active:before {
+          background: url('../img/settings-active.svg'); }
+        /* line 107, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.logout:before {
+          background: url('../img/logout.svg');
+          width: 23px;
+          height: 23px; }
+        /* line 115, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a:hover {
+          text-decoration: none;
+          color: #CFD0D1;
+          transition: all 0.3s ease-out;
+          background: rgba(0, 0, 0, 0.2); }
+        /* line 122, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        .nav > ul > li > a.active {
+          background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+          background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+          background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
+          background-color: #96DEDA;
+          box-shadow: 0px 2px 0px 0px #3EA49F;
+          color: #2E323E;
+          border-bottom: none;
+          text-decoration: none; }
+          /* line 132, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          .nav > ul > li > a.active:hover {
+            background: #50C9C3;
+            box-shadow: 0px 2px 0px 0px #50C9C3; }
 
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,140 @@
 .sidebar	{
 	width: 100%;
+	background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
+	background-image: -o-linear-gradient(#424757 0%, #262934 100%);
+	background-image: linear-gradient(#424757 0%, #262934 100%);	
 
 	@include breakpoint($small)	{
 		width: 30%;
 		float: left;
 		position: fixed;
 		height: 100%;
-		background: #eee;
+	}
+
+	.avatar	{
+		margin-bottom: $space / 2;
+	}
+}
+
+.user-snapshot	{
+	margin-top: $space * 2;
+	margin-bottom: $space * 2;
+	padding-left: $space;
+	padding-right: $space;
+	color: #fff;
+
+	.user-name	{
+		width: 100%;
+		text-align: center;
+		font-family: $serif;
+		font-size: 2.5rem;
+		color: $grey;
+		font-weight: 300;
+		line-height: 1em;
+	}
+}
+
+.nav	{
+	width: 100%;
+
+	& > ul	{
+		width: 100%;
+		text-align: left;
+
+		& > li	{
+			display: block;
+			width: 100%;
+			float: left;	
+
+
+			&:first-child	{
+
+				& > a	{
+					border-top: 1px solid #474C5F;	
+				}
+				
+			}					
+
+			& > a	{
+				display: block;
+				width: 100%;
+				float: left;
+				padding: 1.8rem 3rem 1.8rem 6.5rem;
+				font-size: 1.4rem;
+				color: $grey;
+				letter-spacing: 0.86px;
+				line-height: 19px;
+				transition: all 0.3s ease-in;
+				border-bottom: 1px solid #474C5F;
+				text-transform: uppercase;
+				position: relative;
+
+				&:before	{
+					content: " ";
+					width: 26px;
+					height: 24px;
+					position: absolute;
+					left: 3rem;
+					top: 16px;						
+				}
+
+				&.my-board	{
+
+						&:before	{
+						background: url('../img/my-board.svg');					
+					}
+
+					&.active:before	{
+						background: url('../img/my-board-active.svg');	
+					}
+				}
+
+				&.settings	{
+
+					&:before	{
+						background: url('../img/settings.svg');	
+						width: 24px;
+					}
+
+					&.active:before	{
+						background: url('../img/settings-active.svg');	
+					}					
+
+				}
+
+				&.logout	{
+
+					&:before	{
+						background: url('../img/logout.svg');					
+						width: 23px;
+						height: 23px;					
+					}			
+
+				}								
+
+				&:hover	{
+					text-decoration: none;
+					color: $light-grey;
+					transition: all 0.3s ease-out;
+					background: rgba(0, 0, 0, 0.2);
+				}
+
+				&.active	{
+					background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+					background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
+					background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
+					background-color: #96DEDA;
+					box-shadow: 0px 2px 0px 0px #3EA49F;
+					color: $dark-grey;		
+					border-bottom: none;
+					text-decoration: none;
+
+					&:hover	{
+						background: #50C9C3;
+						box-shadow: 0px 2px 0px 0px #50C9C3;
+					}	
+				}				
+			}
+		}
 	}
 }

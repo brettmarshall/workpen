@@ -1,12 +1,16 @@
 /*!
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  background-image: -webkit-linear-gradient(#E8E8E8 30%, #C1C1C1 100%);
+  background-image: -o-linear-gradient(#E8E8E8 30%, #C1C1C1 100%);
+  background-image: linear-gradient(#E8E8E8 30%, #C1C1C1 100%);  
 }
 body {
   margin: 0;
+  min-height: 100%;  
 
   * {
     -moz-box-sizing: border-box;
@@ -17,6 +21,8 @@ body {
     padding: 0;
   }
 }
+
+
 script  {
   display: none;
 }

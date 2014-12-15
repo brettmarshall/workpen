@@ -1,0 +1,51 @@
+/* === Helpers === */
+
+.circle	{
+	border-radius: 50%;
+}
+
+.center-align	{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.space-default	{
+	margin-bottom: $space / 2;
+
+	@include breakpoint($small)	{
+		margin-bottom: $space;		
+	}
+}
+
+.space-double	{
+	margin-bottom: $space;
+
+	@include breakpoint($small)	{
+		margin-bottom: $space * 2;		
+	}	
+}
+
+.space-triple	{
+	margin-bottom: $space * 1.5;
+
+	@include breakpoint($small)	{
+		margin-bottom: $space * 3;		
+	}	
+}
+
+.space-quad	{
+	margin-bottom: $space * 3;
+
+	@include breakpoint($small)	{
+		margin-bottom: $space * 4;		
+	}	
+}
+
+.space-cinco	{
+	margin-bottom: $space * 4;
+
+	@include breakpoint($small)	{
+		margin-bottom: $space * 5;		
+	}	
+}

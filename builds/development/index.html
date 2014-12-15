@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
   <title>Angular Boilerplate</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="apple-touch-icon" href="icon.png" sizes="120x120">
@@ -18,27 +18,16 @@
 </head>
 <body>
   <section class="app">
-    <aside class="sidebar">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error quos, temporibus! Harum assumenda, quod incidunt veniam, laboriosam praesentium ea ipsa qui ipsum. Porro quia tempore quaerat illum harum rem.</p>
-    </aside>    
-    <div class="main">
-      <header>
-        <nav class="cf nav" ng-include="'views/nav.html'"></nav>
-      </header>    
-      <div class="container">
-        <div class="row">
-          <main class="columns-80 centerAlign" ng-view></main>     
-        </div>
-      </div>
+    <aside class="sidebar" ng-include="'views/sidebar.html'" ng-controller="UserController"></aside>
+    <div class="main">  
+      <main ng-view></main>     
     </div>
   </section>
   <script src="js/app.js"></script>
+  <script src="js/controllers/user-controller.js"></script>  
   <script src="js/controllers/login-controller.js"></script>
   <script src="js/controllers/register-controller.js"></script>
-  <script src="js/controllers/list-controller.js"></script>  
+  <script src="js/controllers/list-controller.js"></script>
+  <script src="js/directives/nav-directive.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
-myApp.controller("ListController", ["$scope", "$firebase", "md5",
-    function($scope, $firebase, md5) {
+myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
+    function($scope, $firebase, md5, $http) {
 
     // gets user information
     var authData = ref.getAuth();
 
     if (authData) { // if logged in
-        console.log("User " + authData.uid + " is logged in with " + authData.provider);
+        
 
         // gets the user id
         var user_id = authData.uid;
@@ -86,6 +86,25 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5",
                 taskCompleted : true
             });
         }
+
+        $scope.designQuote = function() {
+
+            var url = "http://quotesondesign.com/api/3.0/api-3.0.json" + "?callback=JSON_CALLBACK";
+
+            $http.jsonp(url).
+              success(function(data, status, headers, config) {
+
+                $scope.quote = data.quote;
+                $scope.author = data.author;
+
+              }).
+              error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+              });                          
+        }
+
+        $scope.designQuote();
 
 
     } else {

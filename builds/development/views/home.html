@@ -1,6 +1,9 @@
-<section ng-controller="ListController" class="col-md-10 col-md-offset-1">
-	<img ng-src="http://www.gravatar.com/avatar/{{avatar}}" alt="{{ userInfo.firstname + ' ' + userInfo.lastname }}">
-  <h1>Hello, {{ userInfo.firstname }}</h1>
+<section ng-controller="ListController">
+  <blockquote class="large-blockquote">
+  	<span class="design-quote">Design Quote</span>
+  	<p>{{ quote | quoteencode}}</p>
+  	<span class="byline">- {{ author }}</span>
+  </blockquote>
 
   <form ng-submit="createTask()" name="creatListForm">
   	<label>Add Task</label>

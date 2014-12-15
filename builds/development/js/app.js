@@ -16,6 +16,12 @@ myApp.controller("LogoutController", ["$scope", "$firebase", "$firebaseAuth",
   }
 ]);
 
+myApp.filter('quoteencode', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
+    };
+});
+
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
     when('/home', {
@@ -23,19 +29,38 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: 'LogoutController'
     },  {
       controller: 'ListController'
+    },  {
+      controller: 'UserController'
     }).
+
+
     when('/login', {
       templateUrl: 'views/login.html',
       controller:  'LoginController'
     },  {
       controller: 'LogoutController'
+    },  {
+      controller: 'UserController'
     }). 
+
+    when('/settings', {
+      templateUrl: 'views/settings.html',
+      controller:  'LogoutController'
+    },  {
+      controller: 'UserController'
+    }).     
+
+
     when('/register', {
       templateUrl: 'views/register.html',
       controller:  'RegisterController'
     },  {
       controller: 'LogoutController'
-    }).        
+    },  {
+      controller: 'UserController'
+    }).  
+
+
     otherwise({
       redirectTo: '/home'
     });
