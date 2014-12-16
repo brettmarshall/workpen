@@ -6,19 +6,19 @@
 	</blockquote>
 
 	<form ng-submit="createTask()" name="creatListForm" class="task-form">
-		<input type="text" ng-model="task" id="task-create" placeholder="Add Task">
-		<button type="submit">+</button>
+		<input type="text" ng-model="task" id="task-create" placeholder="Enter your task">
+		<button type="submit" class="btn">Add Task</button>
 	</form>
 
 	<div class="wrapper">
 		<div class="tasks">
 			<ul>
-				<li ng-repeat="task in tasks" ng-class="{ 'complete': task.taskCompleted }">
+				<li ng-repeat="task in tasks | orderBy:'taskCompleted':false" ng-class="{ 'complete': task.taskCompleted }">
 					<div class="task-status">
-						<input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="finishTask($event)" data-key="{{ task.taskKey }}" />
+						<input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="completedToggle($event)" data-key="{{ task.taskKey }}" />
 					</div>
 					<div class="task-info">{{ task.task }}</div>
-					<div class="task-actions"></div>
+					<div class="task-actions"><span class="delete-task" ng-click="deleteTask($event)" data-key="{{ task.taskKey }}">x</span></div>
 				</li>
 			</ul>
 		</div>

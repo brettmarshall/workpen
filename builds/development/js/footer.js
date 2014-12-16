@@ -86,7 +86,9 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         var sync = $firebase(tasks);
 
         // reads the tasks as an object
-        $scope.tasks = sync.$asArray();        
+        $scope.tasks = sync.$asArray();
+
+        $scope.filteredResults = '';        
 
         // gets user's email, hashes the email and preps it to be inserted
         // into an img to show user's gravatar avatar
@@ -213,6 +215,8 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
 
         // reads the tasks as an object
         $scope.tasks = sync.$asArray();
+
+        $scope.filteredResults = '';
         
         // will expose the results of the createTask.then obj function to the next .then function
         var key = '';
@@ -261,7 +265,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
 
         }
 
-        $scope.finishTask = function($event)  {
+        $scope.completedToggle = function($event)  {
 
             // gets the tasks that is being clicked
             var input = $event.target;
@@ -270,13 +274,47 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
             // gets the task location
             var taskKeyUpdate = tasks.child(taskKey);
 
+            var isCompletedBool = tasks.child(taskKey + '/taskCompleted');
+
             // wraps taskKeyUpdate with firebase so it can access the $update function
             taskKeyUpdate = $firebase(taskKeyUpdate);
 
-            // updates the task to completed
-            taskKeyUpdate.$update({
-                taskCompleted : true
+            var taskObj = $firebase(isCompletedBool).$asArray();
+
+            $scope.comBool = '';
+
+            isCompletedBool.on("value", function(snapshot) {
+                return $scope.comBool = snapshot.val();
             });
+
+            console.log($scope.comBool)
+
+            if ($scope.comBool == true) {
+                // updates the task to completed
+                taskKeyUpdate.$update({
+                    taskCompleted : false
+                });
+            } else  {
+                // updates the task to completed
+                taskKeyUpdate.$update({
+                    taskCompleted : true
+                });                
+            }
+
+        }
+
+        $scope.deleteTask = function($event)    {
+            // gets the tasks that is being clicked
+            var input = $event.target;
+            var taskKey = jQuery(input).attr('data-key');
+
+            // gets the task location
+            var taskKeyUpdate = tasks.child(taskKey);
+
+            var obj = $firebase(taskKeyUpdate);
+
+            console.log(obj)
+            obj.$remove();      
         }
 
         $scope.designQuote = function() {

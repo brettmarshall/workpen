@@ -19,7 +19,9 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         var sync = $firebase(tasks);
 
         // reads the tasks as an object
-        $scope.tasks = sync.$asArray();        
+        $scope.tasks = sync.$asArray();
+
+        $scope.filteredResults = '';        
 
         // gets user's email, hashes the email and preps it to be inserted
         // into an img to show user's gravatar avatar
