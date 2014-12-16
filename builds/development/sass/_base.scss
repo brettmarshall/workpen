@@ -65,7 +65,8 @@ $theme-color: #50C9C3; // null
 $accent-color: darken($theme-color, 10); // That is, 10% darker than the theme-color.
 $secondary-color: #F5F5E1;
 $tertiary-color: #FDD451;
-
+$success-color: #68DB12;
+$error-color: #DB1212;
 // Animation Variables
 $duration: .35s; // was .15, upped for hero transition - or change via js
 $delay: .2s;

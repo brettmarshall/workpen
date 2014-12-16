@@ -9,3 +9,15 @@
     -webkit-transform: scale(1);
   }
 }
+
+@-webkit-keyframes color {
+  0% { 
+    border-color: $grey;
+  }
+  60% {
+    border-color: $success-color;
+  }
+  100% {
+    border-color: $grey
+  }
+}

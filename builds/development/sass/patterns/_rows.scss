@@ -21,6 +21,11 @@
 	float: left;
 	width: 100%;
 	clear: both;
+	display: block;
+
+	@include breakpoint($small)	{
+		display: table;
+	}
 
 	&:last-child	{
 		border-bottom: none;
@@ -38,9 +43,13 @@
 
 	&.complete	{
 
-		*	{
-			opacity: 0.5;
+		& > *	{
+			opacity: 0.3;
 			transition: all 0.3s linear;
+		}
+
+		.task-actions	{
+			opacity: 0.5;
 		}
 
 		.task-info	{
@@ -49,18 +58,26 @@
 		}
 	}
 
-	.task-status	{
+	.task-status, .task-info, .task-actions	{
+		display: block;
 		float: left;
+
+		@include breakpoint($small)	{
+			display: table-cell;
+			vertical-align: middle;	
+			float: none;		
+		}
+	}
+
+	.task-status	{
 		width: 20%;
 	}
 
-	.task-info	{
-		float: left;	
+	.task-info	{	
 		width: 60%;
 	}
 
 	.task-actions	{
-		float: left;
 		width: 20%;
 		text-align: right;
 	}		
@@ -68,9 +85,38 @@
 
 .delete-task	{
 	cursor: pointer;
-	color: red;
+	color: $error-color;
 	font-size: 2rem;
+	width: 25px;
+	display: inline-block;
+
+	& > svg	{
+		width: 100%;
+		height: auto;
+
+		.dt-fill	{
+			fill: $grey;
+		}
+	}
+
+	&:hover	{
+		& > svg	{
+
+			.dt-fill	{
+				fill: $error-color;
+			}
+		}		
+	}
 }
+
+// .tasks li.complete .delete-task > svg	{
+// 		-webkit-animation-name: pulse;
+// 		-webkit-animation-duration: 0.3s;
+// 		-webkit-animation-timing-function: ease;
+// 		-webkit-animation-delay: 0s;            
+// 		-webkit-animation-iteration-count: 1;   
+// 		-webkit-animation-direction: normal;	
+// }
 
 
 

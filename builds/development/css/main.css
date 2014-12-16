@@ -396,6 +396,19 @@ blockquote {
   100% {
     -webkit-transform: scale(1); } }
 
+@-webkit-keyframes color {
+  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  0% {
+    border-color: #8A8A8A; }
+
+  /* line 17, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  60% {
+    border-color: #68DB12; }
+
+  /* line 20, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  100% {
+    border-color: #8A8A8A; } }
+
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
 .container {
   margin-right: auto;
@@ -1420,7 +1433,7 @@ blockquote {
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
-          background-color: #96DEDA;
+          background-color: #50C9C3;
           box-shadow: 0px 2px 0px 0px #3EA49F;
           color: #2E323E;
           border-bottom: none;
@@ -1455,7 +1468,7 @@ input {
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid #2E323E;
+  border: 1px solid #a4a4a4;
   width: 24px;
   height: 24px;
   position: relative;
@@ -1487,9 +1500,15 @@ input[type="checkbox"] {
       bottom: 0;
       left: 7px;
       -webkit-transform: rotate(45deg);
-      transition: all 0.3s ease-in; }
+      transition: all 0.3s ease-in;
+      -webkit-animation-name: color;
+      -webkit-animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-direction: normal; }
 
-/* line 53, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 59, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
 input[type="text"] {
   color: #8A8A8A;
   padding: 1rem 1.5rem;
@@ -1499,21 +1518,21 @@ input[type="text"] {
   border: none;
   text-indent: 0;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.06); }
-  /* line 63, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 69, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   input[type="text"]::-webkit-input-placeholder {
     text-indent: 0;
     transition: all 0.6s ease-out;
     opacity: 0.5; }
-  /* line 70, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 76, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   input[type="text"]:focus {
     outline: none; }
-    /* line 73, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    /* line 79, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
     input[type="text"]:focus::-webkit-input-placeholder {
       text-indent: 120%;
       opacity: 0;
       transition: all 0.6s ease-in; }
 
-/* line 85, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 91, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
 .task-form {
   width: 100%;
   clear: both;
@@ -1526,13 +1545,13 @@ input[type="text"] {
   @media (min-width: 1280px) {
     .task-form {
       width: 60%; } }
-  /* line 101, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 107, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   .task-form input[type="text"] {
     width: 70%;
     display: inline-block;
     font-size: 1.5rem;
     height: 5rem; }
-  /* line 108, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 114, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   .task-form button {
     width: 30%;
     display: inline-block;
@@ -1582,44 +1601,69 @@ input[type="text"] {
   color: #8A8A8A;
   float: left;
   width: 100%;
-  clear: both; }
-  /* line 25, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  clear: both;
+  display: block; }
+  @media (min-width: 768px) {
+    .tasks li {
+      display: table; } }
+  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li:last-child {
     border-bottom: none;
     padding-bottom: 0; }
-  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 35, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li:first-child {
     padding-top: 0; }
-  /* line 34, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 39, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li * {
     opacity: 1;
     transition: all 0.3s linear; }
-  /* line 41, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li.complete * {
-    opacity: 0.5;
-    transition: all 0.3s linear; }
   /* line 46, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li.complete > * {
+    opacity: 0.3;
+    transition: all 0.3s linear; }
+  /* line 51, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li.complete .task-actions {
+    opacity: 0.5; }
+  /* line 55, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.complete .task-info {
     text-decoration: line-through; }
-  /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 61, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
+    display: block;
+    float: left; }
+    @media (min-width: 768px) {
+      .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
+        display: table-cell;
+        vertical-align: middle;
+        float: none; } }
+  /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status {
-    float: left;
     width: 20%; }
-  /* line 57, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 76, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-info {
-    float: left;
     width: 60%; }
-  /* line 62, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-actions {
-    float: left;
     width: 20%;
     text-align: right; }
 
-/* line 69, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 86, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .delete-task {
   cursor: pointer;
-  color: red;
-  font-size: 2rem; }
+  color: #DB1212;
+  font-size: 2rem;
+  width: 25px;
+  display: inline-block; }
+  /* line 93, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .delete-task > svg {
+    width: 100%;
+    height: auto; }
+    /* line 97, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    .delete-task > svg .dt-fill {
+      fill: #8A8A8A; }
+  /* line 105, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .delete-task:hover > svg .dt-fill {
+    fill: #DB1212; }
 
 
 /*# sourceMappingURL=main.css.map */
