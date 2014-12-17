@@ -1,5 +1,5 @@
-myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
-    function($scope, $firebase, md5, $http) {
+myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$interval",
+    function($scope, $firebase, md5, $http, $interval) {
 
     // gets user information
     var authData = ref.getAuth();
@@ -137,11 +137,15 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
               error(function(data, status, headers, config) {
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
-              });                          
+              }); 
+
+              console.log("working");                         
         }
 
-        $scope.designQuote();       
+        $scope.designQuote();  
 
+        // fetches the quote every minutes
+        setInterval( function(){ $scope.designQuote(); }, 120000);
 
     } else {
 
@@ -150,4 +154,5 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http",
     }    
 
   }
+
 ]);

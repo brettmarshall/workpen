@@ -2,6 +2,44 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab:400,300,700);
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-v1kzkj');
+	src:url('../fonts/icomoon.eot?#iefix-v1kzkj') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-v1kzkj') format('woff'),
+		url('../fonts/icomoon.ttf?-v1kzkj') format('truetype'),
+		url('../fonts/icomoon.svg?-v1kzkj#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before {
+	content: "\64";
+}
+.icon-logout:before {
+	content: "\6c";
+}
+.icon-my-board:before {
+	content: "\62";
+}
+.icon-settings:before {
+	content: "\73";
+}
+
 html	{
 	font-family: $body-font;
 }
@@ -21,6 +59,13 @@ blockquote	{
 	}
 
 	&.large-blockquote	{
+		transition: all 0.3s ease-in-out;
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-timing-function: ease;
+		-webkit-animation-delay: 0s;            
+		-webkit-animation-iteration-count: 1;   
+		-webkit-animation-direction: normal;			
 
 		.design-quote	{
 			font-family: $sans-serif;

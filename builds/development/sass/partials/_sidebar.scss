@@ -78,12 +78,10 @@
 				position: relative;
 
 				&:before	{
-					content: " ";
-					width: 26px;
-					height: 24px;
 					position: absolute;
 					left: 3rem;
-					top: 16px;						
+					top: 16px;	
+					font-size: 2.2rem;					
 				}
 
 				&:after	{
@@ -100,9 +98,6 @@
 
 				&.my-board	{
 
-					&:before	{
-						background: url('../img/my-board.svg');					
-					}
 
 					&:after	{
 						content: attr(data-count);
@@ -117,7 +112,7 @@
 					&.active	{
 
 						&:before	{
-							background: url('../img/my-board-active.svg');	
+							color: $dark-grey;
 						}
 
 						&:after	{
@@ -134,23 +129,16 @@
 				&.settings	{
 
 					&:before	{
-						background: url('../img/settings.svg');	
-						width: 24px;
+						
 					}
 
 					&.active:before	{
-						background: url('../img/settings-active.svg');	
+						color: $dark-grey;
 					}					
 
 				}
 
 				&.logout	{
-
-					&:before	{
-						background: url('../img/logout.svg');					
-						width: 23px;
-						height: 23px;					
-					}			
 
 				}								
 

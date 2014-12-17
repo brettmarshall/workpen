@@ -1,4 +1,7 @@
-var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5'])
+.run(function() {
+  FastClick.attach(document.body);
+});
 
 var ref = new Firebase("https://workpen.firebaseio.com/");
 

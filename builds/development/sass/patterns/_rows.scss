@@ -48,10 +48,6 @@
 			transition: all 0.3s linear;
 		}
 
-		.task-actions	{
-			opacity: 0.5;
-		}
-
 		.task-info	{
 			text-decoration: line-through;
 
@@ -59,14 +55,9 @@
 	}
 
 	.task-status, .task-info, .task-actions	{
-		display: block;
-		float: left;
-
-		@include breakpoint($small)	{
-			display: table-cell;
-			vertical-align: middle;	
-			float: none;		
-		}
+		display: table-cell;
+		vertical-align: middle;	
+		float: none;		
 	}
 
 	.task-status	{
@@ -75,6 +66,7 @@
 
 	.task-info	{	
 		width: 60%;
+		word-break: break-word;
 	}
 
 	.task-actions	{
@@ -89,34 +81,15 @@
 	font-size: 2rem;
 	width: 25px;
 	display: inline-block;
-
-	& > svg	{
-		width: 100%;
-		height: auto;
-
-		.dt-fill	{
-			fill: $grey;
-		}
-	}
+	position: relative;
+	z-index: 10;
+	color: $grey;
+	font-size: 2.9rem;
 
 	&:hover	{
-		& > svg	{
-
-			.dt-fill	{
-				fill: $error-color;
-			}
-		}		
+		color: $error-color;	
 	}
 }
-
-// .tasks li.complete .delete-task > svg	{
-// 		-webkit-animation-name: pulse;
-// 		-webkit-animation-duration: 0.3s;
-// 		-webkit-animation-timing-function: ease;
-// 		-webkit-animation-delay: 0s;            
-// 		-webkit-animation-iteration-count: 1;   
-// 		-webkit-animation-direction: normal;	
-// }
 
 
 

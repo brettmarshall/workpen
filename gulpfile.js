@@ -17,7 +17,8 @@ gulp.task('js', function() {
     'builds/development/js/lib/angular-animate/angular-animate.min.js',
     'builds/development/js/lib/firebase/firebase.js',
     'builds/development/js/lib/angularfire/dist/angularfire.min.js',
-    'builds/development/js/lib/angular-md5/angular-md5.min.js'
+    'builds/development/js/lib/angular-md5/angular-md5.min.js',
+    'builds/development/js/lib/fastclick/lib/fastclick.js'
   ])
     .pipe(concat('lib.js'))
     .pipe(gulp.dest('builds/development/js'))      

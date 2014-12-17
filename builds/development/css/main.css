@@ -266,36 +266,81 @@ hr {
   border-top: 1px solid #eeeeee; }
 
 /* === Typography === */
-/* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-v1kzkj');
+  src: url('../fonts/icomoon.eot?#iefix-v1kzkj') format('embedded-opentype'), url('../fonts/icomoon.woff?-v1kzkj') format('woff'), url('../fonts/icomoon.ttf?-v1kzkj') format('truetype'), url('../fonts/icomoon.svg?-v1kzkj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 16, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 30, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+.icon-delete:before {
+  content: "\64"; }
+
+/* line 33, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+.icon-logout:before {
+  content: "\6c"; }
+
+/* line 36, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+.icon-my-board:before {
+  content: "\62"; }
+
+/* line 39, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+.icon-settings:before {
+  content: "\73"; }
+
+/* line 43, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 html {
   font-family: 'Roboto', sans-serif; }
 
-/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 47, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 blockquote {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   text-align: left; }
-  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote * {
     width: 100%; }
-  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 56, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote p {
     font-family: 'Roboto Slab', serif;
     font-weight: 200; }
-  /* line 25, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-  blockquote.large-blockquote .design-quote {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    color: #8A8A8A;
-    text-transform: uppercase;
-    font-weight: 600; }
-  /* line 33, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-  blockquote.large-blockquote p {
-    font-size: 3.2rem; }
-  /* line 37, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-  blockquote.large-blockquote .byline {
-    font-size: 2.2rem;
-    text-align: right; }
+  /* line 61, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  blockquote.large-blockquote {
+    transition: all 0.3s ease-in-out;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal; }
+    /* line 70, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    blockquote.large-blockquote .design-quote {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.6rem;
+      color: #8A8A8A;
+      text-transform: uppercase;
+      font-weight: 600; }
+    /* line 78, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    blockquote.large-blockquote p {
+      font-size: 3.2rem; }
+    /* line 82, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    blockquote.large-blockquote .byline {
+      font-size: 2.2rem;
+      text-align: right; }
 
 /* === Helpers === */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
@@ -408,6 +453,17 @@ blockquote {
   /* line 20, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
   100% {
     border-color: #8A8A8A; } }
+
+@-webkit-keyframes fadeIn {
+  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+
+  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
 
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
 .container {
@@ -1295,7 +1351,11 @@ blockquote {
 .main {
   width: 100%;
   overflow-x: hidden;
-  padding: 3rem; }
+  padding: 3rem;
+  transition: all 0.6s ease-in-out; }
+  /* line 15, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+  .main * {
+    transition: all 0.15s ease-in-out; }
   @media (min-width: 768px) {
     .main {
       float: left;
@@ -1372,13 +1432,11 @@ blockquote {
         position: relative; }
         /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:before {
-          content: " ";
-          width: 26px;
-          height: 24px;
           position: absolute;
           left: 3rem;
-          top: 16px; }
-        /* line 89, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          top: 16px;
+          font-size: 2.2rem; }
+        /* line 87, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:after {
           width: 50px;
           height: 25px;
@@ -1389,10 +1447,7 @@ blockquote {
           border-radius: 8px;
           text-align: center;
           line-height: 25px; }
-        /* line 103, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
-        .nav > ul > li > a.my-board:before {
-          background: url('../img/my-board.svg'); }
-        /* line 107, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 102, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board:after {
           content: attr(data-count);
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1401,34 +1456,25 @@ blockquote {
           box-shadow: 0px 2px 0px 0px #3EA49F;
           border: none;
           color: #2E323E; }
-        /* line 119, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 114, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:before {
-          background: url('../img/my-board-active.svg'); }
-        /* line 123, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          color: #2E323E; }
+        /* line 118, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:after {
           background: none;
           box-shadow: none;
           border: 1px solid #2E323E;
           line-height: 22px; }
-        /* line 136, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
-        .nav > ul > li > a.settings:before {
-          background: url('../img/settings.svg');
-          width: 24px; }
-        /* line 141, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 135, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.settings.active:before {
-          background: url('../img/settings-active.svg'); }
-        /* line 149, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
-        .nav > ul > li > a.logout:before {
-          background: url('../img/logout.svg');
-          width: 23px;
-          height: 23px; }
-        /* line 157, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          color: #2E323E; }
+        /* line 145, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:hover {
           text-decoration: none;
           color: #CFD0D1;
           transition: all 0.3s ease-out;
           background: rgba(0, 0, 0, 0.2); }
-        /* line 164, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 152, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.active {
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1438,7 +1484,7 @@ blockquote {
           color: #2E323E;
           border-bottom: none;
           text-decoration: none; }
-          /* line 174, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          /* line 162, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
           .nav > ul > li > a.active:hover {
             background: #50C9C3;
             box-shadow: 0px 2px 0px 0px #50C9C3; }
@@ -1622,48 +1668,39 @@ input[type="text"] {
     opacity: 0.3;
     transition: all 0.3s linear; }
   /* line 51, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li.complete .task-actions {
-    opacity: 0.5; }
-  /* line 55, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.complete .task-info {
     text-decoration: line-through; }
-  /* line 61, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 57, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
-    display: block;
-    float: left; }
-    @media (min-width: 768px) {
-      .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
-        display: table-cell;
-        vertical-align: middle;
-        float: none; } }
-  /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    display: table-cell;
+    vertical-align: middle;
+    float: none; }
+  /* line 63, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status {
     width: 20%; }
-  /* line 76, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 67, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-info {
-    width: 60%; }
-  /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    width: 60%;
+    word-break: break-word; }
+  /* line 72, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-actions {
     width: 20%;
     text-align: right; }
 
-/* line 86, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 78, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .delete-task {
   cursor: pointer;
   color: #DB1212;
   font-size: 2rem;
   width: 25px;
-  display: inline-block; }
-  /* line 93, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .delete-task > svg {
-    width: 100%;
-    height: auto; }
-    /* line 97, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-    .delete-task > svg .dt-fill {
-      fill: #8A8A8A; }
-  /* line 105, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .delete-task:hover > svg .dt-fill {
-    fill: #DB1212; }
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  color: #8A8A8A;
+  font-size: 2.9rem; }
+  /* line 89, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .delete-task:hover {
+    color: #DB1212; }
 
 
 /*# sourceMappingURL=main.css.map */
