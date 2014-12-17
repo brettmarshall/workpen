@@ -112,11 +112,44 @@ input[type="text"]	{
 	}
 
 	button	{
-		width: 30%;
+		width: 22%;
 		display: inline-block;
-		font-size: 1.5rem;
+		font-size: 0;
 		height: 5rem;
 		border: none;
+		top: 3px;
+		position: relative;
+
+		@include breakpoint($tiny)	{
+			font-size: 1.5rem;
+			width: 30%;
+			top: 0;
+		}
+
+		&:before	{
+			font-family: 'icomoon';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			content: "\61";
+			font-size: 2rem;
+			display: block;
+
+			@include breakpoint($tiny)	{
+				display: none;
+				font-size: 1.5rem;
+			}
+
+
+		}
 	}
 
 }

@@ -3,10 +3,10 @@
 	background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
 	background-image: -o-linear-gradient(#424757 0%, #262934 100%);
 	background-image: linear-gradient(#424757 0%, #262934 100%);	
+	float: left;
 
 	@include breakpoint($small)	{
 		width: 30%;
-		float: left;
 		position: fixed;
 		height: 100%;
 	}

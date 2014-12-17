@@ -266,59 +266,23 @@ hr {
   border-top: 1px solid #eeeeee; }
 
 /* === Typography === */
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?-v1kzkj');
-  src: url('../fonts/icomoon.eot?#iefix-v1kzkj') format('embedded-opentype'), url('../fonts/icomoon.woff?-v1kzkj') format('woff'), url('../fonts/icomoon.ttf?-v1kzkj') format('truetype'), url('../fonts/icomoon.svg?-v1kzkj#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-/* line 16, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* line 30, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-.icon-delete:before {
-  content: "\64"; }
-
-/* line 33, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-.icon-logout:before {
-  content: "\6c"; }
-
-/* line 36, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-.icon-my-board:before {
-  content: "\62"; }
-
-/* line 39, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
-.icon-settings:before {
-  content: "\73"; }
-
-/* line 43, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 html {
   font-family: 'Roboto', sans-serif; }
 
-/* line 47, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 blockquote {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   text-align: left; }
-  /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote * {
     width: 100%; }
-  /* line 56, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote p {
     font-family: 'Roboto Slab', serif;
     font-weight: 200; }
-  /* line 61, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 23, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote.large-blockquote {
     transition: all 0.3s ease-in-out;
     -webkit-animation-name: fadeIn;
@@ -327,17 +291,17 @@ blockquote {
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal; }
-    /* line 70, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 32, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote .design-quote {
       font-family: 'Roboto', sans-serif;
       font-size: 1.6rem;
       color: #8A8A8A;
       text-transform: uppercase;
       font-weight: 600; }
-    /* line 78, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 40, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote p {
       font-size: 3.2rem; }
-    /* line 82, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote .byline {
       font-size: 2.2rem;
       text-align: right; }
@@ -1370,11 +1334,11 @@ blockquote {
   width: 100%;
   background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
   background-image: -o-linear-gradient(#424757 0%, #262934 100%);
-  background-image: linear-gradient(#424757 0%, #262934 100%); }
+  background-image: linear-gradient(#424757 0%, #262934 100%);
+  float: left; }
   @media (min-width: 768px) {
     .sidebar {
       width: 30%;
-      float: left;
       position: fixed;
       height: 100%; } }
   /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
@@ -1599,11 +1563,37 @@ input[type="text"] {
     height: 5rem; }
   /* line 114, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
   .task-form button {
-    width: 30%;
+    width: 22%;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 0;
     height: 5rem;
-    border: none; }
+    border: none;
+    top: 3px;
+    position: relative; }
+    @media (min-width: 480px) {
+      .task-form button {
+        font-size: 1.5rem;
+        width: 30%;
+        top: 0; } }
+    /* line 129, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    .task-form button:before {
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\61";
+      font-size: 2rem;
+      display: block; }
+      @media (min-width: 480px) {
+        .task-form button:before {
+          display: none;
+          font-size: 1.5rem; } }
 
 /* == Buttons == */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/buttons */
@@ -1624,6 +1614,46 @@ input[type="text"] {
     background: #50C9C3;
     box-shadow: 0px 2px 0px 0px transparent;
     transition: all 0.1s ease-in; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-v1kzkj');
+  src: url('../fonts/icomoon.eot?#iefix-v1kzkj') format('embedded-opentype'), url('../fonts/icomoon.woff?-v1kzkj') format('woff'), url('../fonts/icomoon.ttf?-v1kzkj') format('truetype'), url('../fonts/icomoon.svg?-v1kzkj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 26, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+.icon-delete:before {
+  content: "\64"; }
+
+/* line 29, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+.icon-logout:before {
+  content: "\6c"; }
+
+/* line 32, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+.icon-my-board:before {
+  content: "\62"; }
+
+/* line 35, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+.icon-settings:before {
+  content: "\73"; }
+
+/* line 39, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+.icon-add:before {
+  content: "\61"; }
 
 /* === Rows === */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
