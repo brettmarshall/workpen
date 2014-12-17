@@ -22,12 +22,12 @@ blockquote	{
 
 	&.large-blockquote	{
 		transition: all 0.3s ease-in-out;
-		-webkit-animation-name: fadeIn;
-		-webkit-animation-duration: 1s;
-		-webkit-animation-timing-function: ease;
-		-webkit-animation-delay: 0s;            
-		-webkit-animation-iteration-count: 1;   
-		-webkit-animation-direction: normal;			
+		// -webkit-animation-name: fadeIn;
+		// -webkit-animation-duration: 1s;
+		// -webkit-animation-timing-function: ease;
+		// -webkit-animation-delay: 0s;            
+		// -webkit-animation-iteration-count: 1;   
+		// -webkit-animation-direction: normal;			
 
 		.design-quote	{
 			font-family: $sans-serif;

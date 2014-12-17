@@ -1,5 +1,5 @@
 <ul>
-	<li><a href="/#/home" is-active-nav class="my-board icon-my-board" data-count="{{(tasks|filter:{taskCompleted:false}).length}}">My Board</a></li>
+	<li><a href="/#/home" is-active-nav class="my-board icon-my-board num-{{(tasks|filter:{taskCompleted:false}).length}}-change" data-count="{{(tasks|filter:{taskCompleted:false}).length}}">My Board</a></li>
 <!-- 	<li><a href="/#/login" class="login">Login</a></li>
 	<li><a href="/#/register" class="register">Register</a></li> -->
 	<li><a href="/#/settings" is-active-nav class="settings icon-settings">Settings</a></li>

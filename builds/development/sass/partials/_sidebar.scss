@@ -93,10 +93,11 @@
 					border: 1px solid $dark-grey;
 					border-radius: 8px;	
 					text-align: center;
-					line-height: 25px;				
+					line-height: 25px;
+												
 				}				
 
-				&.my-board	{
+				&.my-board	{					
 
 
 					&:after	{
@@ -106,7 +107,8 @@
 						background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
 						box-shadow: 0px 2px 0px 0px #3EA49F;	
 						border: none;
-						color: $dark-grey;					
+						color: $dark-grey;	
+						transition: all 0.3s ease-in-out;				
 					}
 
 					&.active	{
