@@ -268,6 +268,14 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
 
         }
 
+        $scope.filterList = function(val, $event)  {
+
+            console.log($event.target)
+
+            return (val.taskCompleted != 2);
+
+        }
+
         $scope.completedToggle = function($event)  {
 
             // gets the tasks that is being clicked
@@ -442,4 +450,17 @@ return {
    });
  }
  };
+}]);
+/* DOM manipulation for task tools  */
+
+myApp.directive('taskFilter', [ '$location', function($location) {
+	return function(scope, element, attr) {
+		
+		var showActiveTab = function(element)	{
+			jQuery('.filter').removeClass('active');
+			jQuery(element.currentTarget).addClass('active');
+		}
+
+		element.bind('click', showActiveTab);
+	}
 }]);

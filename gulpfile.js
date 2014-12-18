@@ -31,7 +31,8 @@ gulp.task('footer_js', function() {
     'builds/development/js/controllers/login-controller.js',
     'builds/development/js/controllers/register-controller.js',
     'builds/development/js/controllers/list-controller.js',
-    'builds/development/js/directives/nav-directive.js'
+    'builds/development/js/directives/nav-directive.js',
+    'builds/development/js/directives/task-filter-directive.js'
   ])
     .pipe(concat('footer.js'))
     .pipe(gulp.dest('builds/development/js'))  
