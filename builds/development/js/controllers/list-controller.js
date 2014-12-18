@@ -114,7 +114,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
             var input = $event.target;
             var editIcon = jQuery(input);
             var key = editIcon.data('key');
-            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var textarea = jQuery("textarea[data-key='" + key + "']");
             var taskText = textarea.siblings('span');
             var saveIcon = editIcon.siblings('.save-task');
             var cancelIcon = editIcon.siblings('.cancel-edit-task');
@@ -134,7 +134,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
             var input = $event.target;
             var cancelIcon = jQuery(input);
             var key = cancelIcon.data('key');
-            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var textarea = jQuery("textarea[data-key='" + key + "']");
             var taskText = textarea.siblings('span');
             var saveIcon = cancelIcon.siblings('.save-task');
             var editIcon = cancelIcon.siblings('.edit-task');
@@ -157,7 +157,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
             var saveIcon = jQuery(input);
             var key = saveIcon.data('key');
             var taskKey = saveIcon.attr('data-key');
-            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var textarea = jQuery("textarea[data-key='" + key + "']");
             var taskText = textarea.siblings('span');
             var editIcon = saveIcon.siblings('.edit-task');
             var cancelIcon = saveIcon.siblings('.cancel-edit-task');            
