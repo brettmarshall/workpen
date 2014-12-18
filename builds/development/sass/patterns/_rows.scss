@@ -21,7 +21,7 @@
 	float: left;
 	width: 100%;
 	clear: both;
-	display: block;
+	display: table;
 
 	&.ng-enter, &.ng-leave {
 	    -webkit-transition: all 600ms ease;
@@ -71,9 +71,9 @@
 	    transform: scale(1, 1);
 	}	
 
-	@include breakpoint($small)	{
-		display: table;
-	}
+	// @include breakpoint($small)	{
+	// 	display: table;
+	// }
 
 	&:last-child	{
 		border-bottom: none;

@@ -116,15 +116,15 @@ input[type="text"], input[type="email"], input[type="password"], textarea	{
 		width: 22%;
 		display: inline-block;
 		font-size: 0;
-		height: 5rem;
+		height: 4.9rem;
 		border: none;
-		top: 3px;
+		top: 2px;
 		position: relative;
 
-		@include breakpoint($tiny)	{
+		@media (min-width: 890px)	{
 			font-size: 1.5rem;
 			width: 30%;
-			top: 0;
+			top: -1px;
 		}
 
 		&:before	{
@@ -144,7 +144,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea	{
 			font-size: 2rem;
 			display: block;
 
-			@include breakpoint($tiny)	{
+			@media (min-width: 890px)	{
 				display: none;
 				font-size: 1.5rem;
 			}

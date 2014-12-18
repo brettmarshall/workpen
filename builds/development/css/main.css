@@ -1658,15 +1658,15 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 22%;
     display: inline-block;
     font-size: 0;
-    height: 5rem;
+    height: 4.9rem;
     border: none;
-    top: 3px;
+    top: 2px;
     position: relative; }
-    @media (min-width: 480px) {
+    @media (min-width: 890px) {
       .task-form button {
         font-size: 1.5rem;
         width: 30%;
-        top: 0; } }
+        top: -1px; } }
     /* line 130, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
     .task-form button:before {
       font-family: 'icomoon';
@@ -1682,7 +1682,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
       content: "\61";
       font-size: 2rem;
       display: block; }
-      @media (min-width: 480px) {
+      @media (min-width: 890px) {
         .task-form button:before {
           display: none;
           font-size: 1.5rem; } }
@@ -1694,7 +1694,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
   background-image: linear-gradient(to top, #50C9C3 0%, #96DEDA 100%);
   background-color: #50C9C3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), inset 0px -1px 1px rgba(0, 0, 0, 0.1), inset 0px 3px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), inset 0px -1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   color: #2E323E;
   text-decoration: none;
   letter-spacing: 0.86px;
@@ -1783,7 +1783,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   float: left;
   width: 100%;
   clear: both;
-  display: block; }
+  display: table; }
   /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
@@ -1827,9 +1827,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
     transform: scale(1, 1); }
-  @media (min-width: 768px) {
-    .tasks li {
-      display: table; } }
   /* line 78, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li:last-child {
     border-bottom: none;
