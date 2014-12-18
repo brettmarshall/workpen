@@ -1,11 +1,16 @@
 <section ng-controller="RegisterController">
 	
+	<header class="page-header">
+		<h1>Register</h1>
+		<p>Fill out the form below.</p>
+	</header>
+
 	<form ng-submit="register()" novalidate>
 		<input type="text" ng-model="firstname" placeholder="First Name" />
 		<input type="text" ng-model="lastname"placeholder="Last Name" />
 		<input type="email" ng-model="email"placeholder="Email Address" />
 		<input type="password" ng-model="password" placeholder="Password" />
-		<button type="submit">Register</button>
+		<button type="submit" class="btn">Register</button>
 	</form>
 
 </section>

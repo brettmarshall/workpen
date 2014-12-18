@@ -123,9 +123,26 @@
 	}		
 }
 
-.delete-task	{
+.task-info textarea	{
+	width: 100%;
+	resize: none;
+	border: none;
+	display: none;
+
+	&.edit-this-task	{
+		display: block;
+	}
+}
+
+.task-info span	{
+
+	&.edit-this-task	{
+		display: none;
+	}
+}
+
+.delete-task, .edit-task, .cancel-edit-task, .save-task	{
 	cursor: pointer;
-	color: $error-color;
 	font-size: 2rem;
 	width: 25px;
 	display: inline-block;
@@ -135,9 +152,51 @@
 	font-size: 2.9rem;
 
 	&:hover	{
-		color: $error-color;	
+		color: $dark-grey;	
 	}
 }
+
+.edit-task	{
+	font-size: 2.4rem;
+
+	&.edit-this-task	{
+		display: none;	
+	}
+
+	&:before	{
+		top: -2.5px;
+		position: relative;		
+	}
+}
+
+.save-task	{
+	display: none;
+	font-size: 2.3rem;
+
+	&:before	{
+		top: -2.5px;
+		position: relative;		
+	}
+
+	&.edit-this-task	{
+		display: inline-block;	
+	}	
+}
+
+.cancel-edit-task	{
+	display: none;
+	font-size: 2.3rem;
+
+	&:before	{
+		top: -2.5px;
+		position: relative;		
+	}
+
+	&.edit-this-task	{
+		display: inline-block;	
+	}	
+}
+
 
 
 

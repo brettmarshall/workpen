@@ -17,8 +17,13 @@
 					<div class="task-status">
 						<input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="completedToggle($event)" data-key="{{ task.taskKey }}" />
 					</div>
-					<div class="task-info">{{ task.task }}</div>
-					<div class="task-actions"><span class="delete-task icon-delete" ng-click="deleteTask($event)" data-key="{{ task.taskKey }}"></span></div>
+					<div class="task-info"><span>{{ task.task }}</span><textarea name="" id="" data-key="{{ task.taskKey }}">{{ task.task }}</textarea></div>
+					<div class="task-actions">
+					<span class="cancel-edit-task icon-cancel" ng-click="cancelTask($event)" data-key="{{ task.taskKey }}"></span>
+					<span class="save-task icon-save" ng-click="saveTask($event)" data-key="{{ task.taskKey }}"></span>
+					<span class="edit-task icon-edit" ng-click="editTask($event)" data-key="{{ task.taskKey }}"></span>
+					<span class="delete-task icon-delete" ng-click="deleteTask($event)" data-key="{{ task.taskKey }}"></span>
+					</div>
 				</li>
 			</ul>
 		</div>

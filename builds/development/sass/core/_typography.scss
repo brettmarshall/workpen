@@ -49,3 +49,18 @@ blockquote	{
 	}
 
 }
+
+h1	{
+	font-family: $serif;
+	font-weight: 200;
+	font-size: 3.2rem;
+}
+
+.page-header	{
+	padding-bottom: $space;
+
+	h1	{
+		margin-bottom: 0;
+	}
+
+}

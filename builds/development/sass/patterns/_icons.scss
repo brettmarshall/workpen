@@ -23,6 +23,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-edit:before {
+	content: "\65";
+}
+.icon-cancel:before {
+	content: "\63";
+}
+.icon-save:before {
+	content: "\66";
+}
+.icon-add:before {
+	content: "\61";
+}
 .icon-delete:before {
 	content: "\64";
 }
@@ -34,8 +46,4 @@
 }
 .icon-settings:before {
 	content: "\73";
-}
-
-.icon-add:before {
-	content: "\61";
 }

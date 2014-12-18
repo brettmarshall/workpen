@@ -42,7 +42,7 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         $scope.getAvatar(); 
 
     } else  {
-      window.location = '/#/login';
+      window.location = '/#/register';
     } 
 
   }

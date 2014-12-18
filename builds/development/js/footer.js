@@ -112,7 +112,7 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
         $scope.getAvatar(); 
 
     } else  {
-      window.location = '/#/login';
+      window.location = '/#/register';
     } 
 
   }
@@ -305,6 +305,79 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
             }
 
         }
+
+        $scope.editTask = function($event)    {
+            // gets the tasks that is being clicked
+            var input = $event.target;
+            var editIcon = jQuery(input);
+            var key = editIcon.data('key');
+            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var taskText = textarea.siblings('span');
+            var saveIcon = editIcon.siblings('.save-task');
+            var cancelIcon = editIcon.siblings('.cancel-edit-task');
+
+            editIcon.addClass('edit-this-task');
+            saveIcon.addClass('edit-this-task');
+            cancelIcon.addClass('edit-this-task');
+            taskText.addClass('edit-this-task');
+            textarea.addClass('edit-this-task');
+
+            textarea.focus();
+
+        } 
+
+        $scope.cancelTask = function($event)    {
+            // gets the tasks that is being clicked
+            var input = $event.target;
+            var cancelIcon = jQuery(input);
+            var key = cancelIcon.data('key');
+            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var taskText = textarea.siblings('span');
+            var saveIcon = cancelIcon.siblings('.save-task');
+            var editIcon = cancelIcon.siblings('.edit-task');
+            var taskValue = taskText.text();
+
+            cancelIcon.removeClass('edit-this-task');
+            saveIcon.removeClass('edit-this-task');
+            editIcon.removeClass('edit-this-task');
+            taskText.removeClass('edit-this-task');
+            textarea.removeClass('edit-this-task');
+
+            textarea.val(taskValue);
+
+        }         
+
+        $scope.saveTask = function($event)  {
+
+            // gets the tasks that is being clicked
+            var input = $event.target;
+            var saveIcon = jQuery(input);
+            var key = saveIcon.data('key');
+            var taskKey = saveIcon.attr('data-key');
+            var textarea = jQuery("textarea[data-key='" + key + "'");
+            var taskText = textarea.siblings('span');
+            var editIcon = saveIcon.siblings('.edit-task');
+            var cancelIcon = saveIcon.siblings('.cancel-edit-task');            
+            var saveTaskValue = textarea.val();
+
+            // gets the task location
+            var taskKeyUpdate = tasks.child(taskKey);
+
+            // wraps taskKeyUpdate with firebase so it can access the $update function
+            taskKeyUpdate = $firebase(taskKeyUpdate);
+
+            //updates the task to contain the new tasks data
+            taskKeyUpdate.$update({
+                task : saveTaskValue
+            }).then(function()  {
+                editIcon.removeClass('edit-this-task');
+                saveIcon.removeClass('edit-this-task');
+                cancelIcon.removeClass('edit-this-task');
+                taskText.removeClass('edit-this-task');
+                textarea.removeClass('edit-this-task');
+            });
+
+        }               
 
         $scope.deleteTask = function($event)    {
             // gets the tasks that is being clicked

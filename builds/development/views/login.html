@@ -1,10 +1,15 @@
 <section ng-controller="LoginController">
 	
+	<header class="page-header">
+		<h1>Login</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nostrum sit est ex, similique quis, suscipit earum alias quaerat ipsum, labore necessitatibus. Voluptatibus illum animi quos deserunt, adipisci voluptates earum.</p>
+	</header>
+
 	<form ng-submit="login()">
 		<input type="email" ng-model="email" placeholder="Email Address" autofocus/>
 		<input type="password" ng-model="password" placeholder="Password" />
 		<p>{{error.message}}</p>
-		<button type="submit">Login</button>
+		<button type="submit" class="btn">Login</button>
 	</form>
 
 </section>
