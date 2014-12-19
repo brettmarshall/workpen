@@ -1762,29 +1762,33 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 
 /* === Rows === */
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+.wrapper.task-wrapper {
+  padding: 0; }
+
+/* line 7, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .tasks {
   float: left;
   display: block;
   width: 100%;
   clear: both; }
 
-/* line 10, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 14, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .tasks ul {
   width: 100%;
   clear: both;
-  float: left; }
+  float: left;
+  transition: height 0.3s ease-in-out; }
 
-/* line 16, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 21, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .tasks li {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   color: #8A8A8A;
   float: left;
   width: 100%;
   clear: both;
   display: table; }
-  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1795,7 +1799,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
-  /* line 38, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 42, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1806,77 +1810,149 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
-  /* line 50, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 54, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-enter {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
-    transform: scale(0.01, 0.01); }
-  /* line 58, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    transform: scale(0.01, 0.01);
+    height: 0;
+    overflow: hidden; }
+  /* line 64, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-leave-active {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
-    transform: scale(0.01, 0.01); }
-  /* line 66, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    transform: scale(0.01, 0.01);
+    height: 0;
+    overflow: hidden; }
+  /* line 74, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.ng-enter-active {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
-    transform: scale(1, 1); }
-  /* line 78, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    transform: scale(1, 1);
+    height: auto;
+    overflow: auto; }
+  /* line 88, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li:last-child {
-    border-bottom: none;
-    padding-bottom: 0; }
-  /* line 83, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li:first-child {
-    padding-top: 0; }
-  /* line 87, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+    border-bottom: none; }
+  /* line 92, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li * {
     opacity: 1;
     transition: all 0.3s linear; }
-  /* line 94, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 99, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.complete > * {
     opacity: 0.3;
     transition: all 0.3s linear; }
-  /* line 99, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 104, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li.complete .task-info {
     text-decoration: line-through; }
-  /* line 105, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 110, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
     display: table-cell;
     vertical-align: middle;
     float: none; }
-  /* line 111, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 116, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status {
     width: 20%; }
-  /* line 115, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 120, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-info {
     width: 60%;
     word-break: break-word; }
-  /* line 120, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 125, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-actions {
     width: 20%;
     text-align: right; }
 
-/* line 126, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 131, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .task-info textarea {
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(0.01, 0.01);
+  -moz-transform: scale(0.01, 0.01);
+  -ms-transform: scale(0.01, 0.01);
+  -o-transform: scale(0.01, 0.01);
+  transform: scale(0.01, 0.01);
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
   width: 100%;
   resize: none;
-  border: none;
-  display: none; }
-  /* line 132, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  border: none; }
+  /* line 137, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .task-info textarea.edit-this-task {
-    display: block; }
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    height: auto;
+    overflow: auto;
+    padding: 1rem 1.5rem; }
 
-/* line 139, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-.task-info span.edit-this-task {
-  display: none; }
+/* line 143, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+.task-info span {
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+  height: auto;
+  overflow: auto; }
+  /* line 147, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  .task-info span.edit-this-task {
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0.01, 0.01);
+    -moz-transform: scale(0.01, 0.01);
+    -ms-transform: scale(0.01, 0.01);
+    -o-transform: scale(0.01, 0.01);
+    transform: scale(0.01, 0.01);
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden; }
 
-/* line 144, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 152, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .delete-task, .edit-task, .cancel-edit-task, .save-task {
   cursor: pointer;
   font-size: 2rem;
@@ -1886,42 +1962,42 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   z-index: 10;
   color: #8A8A8A;
   font-size: 2.9rem; }
-  /* line 154, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 162, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
     color: #2E323E; }
 
-/* line 159, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 167, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .edit-task {
   font-size: 2.4rem; }
-  /* line 162, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 170, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .edit-task.edit-this-task {
     display: none; }
-  /* line 166, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 174, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .edit-task:before {
     top: -2.5px;
     position: relative; }
 
-/* line 172, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 180, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .save-task {
   display: none;
   font-size: 2.3rem; }
-  /* line 176, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 184, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .save-task:before {
     top: -2.5px;
     position: relative; }
-  /* line 181, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 189, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .save-task.edit-this-task {
     display: inline-block; }
 
-/* line 186, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 194, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .cancel-edit-task {
   display: none;
   font-size: 2.3rem; }
-  /* line 190, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 198, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .cancel-edit-task:before {
     top: -2.5px;
     position: relative; }
-  /* line 195, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 203, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .cancel-edit-task.edit-this-task {
     display: inline-block; }
 

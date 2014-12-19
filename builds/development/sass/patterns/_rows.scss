@@ -1,5 +1,9 @@
 /* === Rows === */
 
+.wrapper.task-wrapper	{
+	padding: 0;
+}
+
 .tasks	{
 	float: left;
 	display: block;
@@ -11,11 +15,11 @@
 	width: 100%;
 	clear: both;
 	float: left;
+	transition: height 0.3s ease-in-out;
 }
 
 .tasks li	{
-	padding-top: $space / 2;
-	padding-bottom: $space / 2;
+	padding: $space;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	color: $grey;
 	float: left;
@@ -53,6 +57,8 @@
 	    -ms-transform: scale(0.01, 0.01);
 	    -o-transform: scale(0.01, 0.01);
 	    transform: scale(0.01, 0.01);
+	    height: 0;
+	    overflow: hidden;	    
 	}
 
 	&.ng-leave-active {
@@ -61,6 +67,8 @@
 	    -ms-transform: scale(0.01, 0.01);
 	    -o-transform: scale(0.01, 0.01);
 	    transform: scale(0.01, 0.01);
+	    height: 0;
+	    overflow: hidden;	    
 	}
 
 	&.ng-enter-active {
@@ -69,6 +77,8 @@
 	    -ms-transform: scale(1, 1);
 	    -o-transform: scale(1, 1);
 	    transform: scale(1, 1);
+	    height: auto;
+	    overflow: auto;
 	}	
 
 	// @include breakpoint($small)	{
@@ -77,12 +87,7 @@
 
 	&:last-child	{
 		border-bottom: none;
-		padding-bottom: 0;
 	}
-
-	&:first-child	{
-		padding-top: 0;
-	}	
 
 	*	{
 		opacity: 1;
@@ -124,20 +129,23 @@
 }
 
 .task-info textarea	{
+	@include shrink(down);
 	width: 100%;
 	resize: none;
 	border: none;
-	display: none;
 
 	&.edit-this-task	{
-		display: block;
+		@include shrink(up);
+		padding: 1rem 1.5rem;
 	}
 }
 
 .task-info span	{
 
+	@include shrink(up);
+
 	&.edit-this-task	{
-		display: none;
+		@include shrink(down);
 	}
 }
 

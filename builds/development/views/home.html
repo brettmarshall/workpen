@@ -10,7 +10,7 @@
 		<button type="submit" class="btn">Add Task</button>
 	</form>
 
-	<div class="wrapper">
+	<div class="wrapper task-wrapper">
 		<div class="tasks">
 			<ul>
 				<li ng-repeat="task in tasks | orderBy:'taskCompleted':false" ng-class="{ 'complete': task.taskCompleted }">
