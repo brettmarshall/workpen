@@ -1,5 +1,5 @@
-myApp.controller("UserController", ["$scope", "$firebase", "md5",
-  function($scope, $firebase, md5) {
+myApp.controller("UserController", ["$scope", "$firebase", "md5", "$rootScope",
+  function($scope, $firebase, md5, $rootScope) {
 
     var authData = ref.getAuth();
 
@@ -39,10 +39,13 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
             });                 
         }
         // runs the getAvatar function on "load"
-        $scope.getAvatar(); 
+        $scope.getAvatar();
+
+        $rootScope.loggedIn = true; 
 
     } else  {
-      window.location = '/#/register';
+        $rootScope.loggedIn = false;
+        window.location = '/#/register';
     } 
 
   }

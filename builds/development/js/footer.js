@@ -68,8 +68,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
       redirectTo: '/home'
     });
 }]);
-myApp.controller("UserController", ["$scope", "$firebase", "md5",
-  function($scope, $firebase, md5) {
+myApp.controller("UserController", ["$scope", "$firebase", "md5", "$rootScope",
+  function($scope, $firebase, md5, $rootScope) {
 
     var authData = ref.getAuth();
 
@@ -109,10 +109,13 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5",
             });                 
         }
         // runs the getAvatar function on "load"
-        $scope.getAvatar(); 
+        $scope.getAvatar();
+
+        $rootScope.loggedIn = true; 
 
     } else  {
-      window.location = '/#/register';
+        $rootScope.loggedIn = false;
+        window.location = '/#/register';
     } 
 
   }
@@ -450,4 +453,17 @@ return {
    });
  }
  };
+}]);
+/* DOM manipulation for task tools  */
+
+myApp.directive('taskFilter', [ '$location', function($location) {
+	return function(scope, element, attr) {
+		
+		var showActiveTab = function(element)	{
+			jQuery('.filter').removeClass('active');
+			jQuery(element.currentTarget).addClass('active');
+		}
+
+		element.bind('click', showActiveTab);
+	}
 }]);

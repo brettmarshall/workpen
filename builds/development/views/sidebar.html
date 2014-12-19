@@ -1,5 +1,6 @@
 <div class="user-snapshot">
-	<img ng-src="http://www.gravatar.com/avatar/{{avatar}}?s=90" alt="{{ userInfo.firstname + ' ' + userInfo.lastname }}" class="circle center-align avatar">
+	<img ng-show="loggedIn == true" ng-src="http://www.gravatar.com/avatar/{{avatar}}?s=90" alt="{{ userInfo.firstname + ' ' + userInfo.lastname }}" class="circle center-align avatar">
+	<img ng-show="loggedIn == false" ng-src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y&d=mm" class="circle center-align avatar">	
 	<p class="user-name">{{ userInfo.firstname + ' ' + userInfo.lastname }}</p>
 </div>
 

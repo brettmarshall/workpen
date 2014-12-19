@@ -1761,19 +1761,16 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   content: "\73"; }
 
 /* === Rows === */
-<<<<<<< HEAD
-/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .wrapper.task-wrapper {
   padding: 0; }
 
-/* line 7, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+/* line 8, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .task-filters {
   width: 100%;
   text-align: right;
   padding-bottom: 0.5rem; }
-  /* line 8, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  /* line 13, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .task-filters .filter {
     display: inline-block;
     padding-left: 1rem;
@@ -1784,37 +1781,28 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     font-size: 1.2rem;
     color: #bdbdbd;
     cursor: pointer; }
-    /* line 19, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+    /* line 24, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
     .task-filters .filter.active {
       color: #8A8A8A; }
-    /* line 23, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+    /* line 28, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
     .task-filters .filter:first-child {
       border-left: none; }
 
-/* line 31, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+/* line 35, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .tasks {
   float: left;
   display: block;
   width: 100%;
   clear: both; }
 
-<<<<<<< HEAD
-/* line 14, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-/* line 38, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+/* line 42, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .tasks ul {
   width: 100%;
   clear: both;
   float: left;
   transition: height 0.3s ease-in-out; }
 
-<<<<<<< HEAD
-/* line 21, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-/* line 44, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+/* line 49, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .tasks li {
   padding: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1823,11 +1811,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   clear: both;
   display: table; }
-<<<<<<< HEAD
-  /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  /* line 54, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 58, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1838,11 +1822,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
-<<<<<<< HEAD
-  /* line 42, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  /* line 66, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 70, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1853,117 +1833,65 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
-<<<<<<< HEAD
-  /* line 54, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  /* line 78, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 82, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.ng-enter {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
-<<<<<<< HEAD
     transform: scale(0.01, 0.01);
     height: 0;
     overflow: hidden; }
-  /* line 64, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-    transform: scale(0.01, 0.01); }
-  /* line 86, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 92, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.ng-leave-active {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
-<<<<<<< HEAD
     transform: scale(0.01, 0.01);
     height: 0;
     overflow: hidden; }
-  /* line 74, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-    transform: scale(0.01, 0.01); }
-  /* line 94, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 102, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.ng-enter-active {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
-<<<<<<< HEAD
     transform: scale(1, 1);
     height: auto;
     overflow: auto; }
-  /* line 88, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 116, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li:last-child {
     border-bottom: none; }
-  /* line 92, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 120, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li * {
     opacity: 1;
-    transition: all 0.3s linear; }
-  /* line 99, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li.complete > * {
-    opacity: 0.3;
-    transition: all 0.3s linear; }
-  /* line 104, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li.complete .task-info {
-    text-decoration: line-through; }
-  /* line 110, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-    transform: scale(1, 1); }
-  /* line 106, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li:last-child {
-    border-bottom: none;
-    padding-bottom: 0; }
-  /* line 111, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li:first-child {
-    padding-top: 0; }
-  /* line 115, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li * {
-    opacity: 1;
-    transition: all 0.3s linear; }
-  /* line 122, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li.complete > * {
-    opacity: 0.3;
     transition: all 0.3s linear; }
   /* line 127, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li.complete > * {
+    opacity: 0.3;
+    transition: all 0.3s linear; }
+  /* line 132, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li.complete .task-info {
     text-decoration: line-through; }
-  /* line 133, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 138, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
     display: table-cell;
     vertical-align: middle;
     float: none; }
-<<<<<<< HEAD
-  /* line 116, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 144, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li .task-status {
     width: 20%; }
-  /* line 120, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .tasks li .task-info {
-    width: 60%;
-    word-break: break-word; }
-  /* line 125, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  /* line 139, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li .task-status {
-    width: 20%; }
-  /* line 143, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .tasks li .task-info {
-    width: 60%;
-    word-break: break-word; }
   /* line 148, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  .tasks li .task-info {
+    width: 60%;
+    word-break: break-word; }
+  /* line 153, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .tasks li .task-actions {
     width: 20%;
     text-align: right; }
 
-<<<<<<< HEAD
-/* line 131, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-/* line 154, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+/* line 159, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .task-info textarea {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -1985,9 +1913,8 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   overflow: hidden;
   width: 100%;
   resize: none;
-<<<<<<< HEAD
   border: none; }
-  /* line 137, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 165, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .task-info textarea.edit-this-task {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -2008,7 +1935,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     overflow: auto;
     padding: 1rem 1.5rem; }
 
-/* line 143, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 171, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .task-info span {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -2027,7 +1954,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   opacity: 1;
   height: auto;
   overflow: auto; }
-  /* line 147, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 175, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .task-info span.edit-this-task {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -2048,20 +1975,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     padding: 0;
     overflow: hidden; }
 
-/* line 152, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  border: none;
-  display: none; }
-  /* line 160, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .task-info textarea.edit-this-task {
-    display: block; }
-
-/* line 167, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-.task-info span.edit-this-task {
-  display: none; }
-
-/* line 172, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+/* line 180, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .delete-task, .edit-task, .cancel-edit-task, .save-task {
   cursor: pointer;
   font-size: 2rem;
@@ -2071,80 +1985,42 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   z-index: 10;
   color: #8A8A8A;
   font-size: 2.9rem; }
-<<<<<<< HEAD
-  /* line 162, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
-    color: #2E323E; }
-
-/* line 167, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-.edit-task {
-  font-size: 2.4rem; }
-  /* line 170, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-  .edit-task.edit-this-task {
-    display: none; }
-  /* line 174, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-  /* line 182, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
-    color: #2E323E; }
-
-/* line 187, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-.edit-task {
-  font-size: 2.4rem; }
   /* line 190, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
+    color: #2E323E; }
+
+/* line 195, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.edit-task {
+  font-size: 2.4rem; }
+  /* line 198, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .edit-task.edit-this-task {
     display: none; }
-  /* line 194, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 202, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .edit-task:before {
     top: -2.5px;
     position: relative; }
 
-<<<<<<< HEAD
-/* line 180, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 208, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .save-task {
   display: none;
   font-size: 2.3rem; }
-  /* line 184, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 212, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .save-task:before {
     top: -2.5px;
     position: relative; }
-  /* line 189, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 217, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .save-task.edit-this-task {
     display: inline-block; }
 
-/* line 194, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+/* line 222, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
 .cancel-edit-task {
   display: none;
   font-size: 2.3rem; }
-  /* line 198, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+  /* line 226, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .cancel-edit-task:before {
     top: -2.5px;
     position: relative; }
-  /* line 203, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
-=======
-/* line 200, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-.save-task {
-  display: none;
-  font-size: 2.3rem; }
-  /* line 204, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .save-task:before {
-    top: -2.5px;
-    position: relative; }
-  /* line 209, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .save-task.edit-this-task {
-    display: inline-block; }
-
-/* line 214, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-.cancel-edit-task {
-  display: none;
-  font-size: 2.3rem; }
-  /* line 218, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
-  .cancel-edit-task:before {
-    top: -2.5px;
-    position: relative; }
-  /* line 223, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
->>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
+  /* line 231, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
   .cancel-edit-task.edit-this-task {
     display: inline-block; }
 

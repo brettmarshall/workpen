@@ -1,7 +1,7 @@
 <ul>
-	<li><a href="/#/home" is-active-nav class="my-board icon-my-board num-{{(tasks|filter:{taskCompleted:false}).length}}-change" data-count="{{(tasks|filter:{taskCompleted:false}).length}}">My Board</a></li>
-<!-- 	<li><a href="/#/login" class="login">Login</a></li>
-	<li><a href="/#/register" class="register">Register</a></li> -->
-	<li><a href="/#/settings" is-active-nav class="settings icon-settings">Settings</a></li>
-	<li><a href="#" id="logout" is-active-nav class="logout icon-logout">Logout</a></li>
+	<li ng-hide="loggedIn == false"><a href="/#/home" is-active-nav class="my-board icon-my-board num-{{(tasks|filter:{taskCompleted:false}).length}}-change" data-count="{{(tasks|filter:{taskCompleted:false}).length}}">My Board</a></li>
+	<li ng-hide="loggedIn == true"><a href="/#/login" class="login">Login</a></li>
+	<li ng-hide="loggedIn == true"><a href="/#/register" class="register">Register</a></li>
+	<li ng-hide="loggedIn == false"><a href="/#/settings" is-active-nav class="settings icon-settings">Settings</a></li>
+	<li ng-hide="loggedIn == false"><a href="#" id="logout" is-active-nav class="logout icon-logout">Logout</a></li>
 </ul>
