@@ -268,6 +268,14 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
 
         }
 
+        $scope.filterList = function(val, $event)  {
+
+            console.log($event.target)
+
+            return (val.taskCompleted != 2);
+
+        }
+
         $scope.completedToggle = function($event)  {
 
             // gets the tasks that is being clicked

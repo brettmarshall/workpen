@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab:400,300,700);
 /*!
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,11 +10,11 @@ html {
   background-image: -o-linear-gradient(#E8E8E8 30%, #C1C1C1 100%);
   background-image: linear-gradient(#E8E8E8 30%, #C1C1C1 100%); }
 
-/* line 11, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 11, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 body {
   margin: 0;
   min-height: 100%; }
-  /* line 15, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+  /* line 15, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
   body * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -23,242 +23,242 @@ body {
     margin: 0;
     padding: 0; }
 
-/* line 26, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 26, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 script {
   display: none; }
 
-/* line 42, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 42, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 48, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 48, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline; }
 
-/* line 52, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 52, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 57, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 57, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 [hidden], template {
   display: none; }
 
-/* line 60, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 60, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 a {
   background-color: transparent; }
 
-/* line 64, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 64, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 a:active, a:hover {
   outline: 0; }
 
-/* line 67, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 67, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 71, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 71, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 b, strong {
   font-weight: bold; }
 
-/* line 74, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 74, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 dfn {
   font-style: italic; }
 
-/* line 77, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 77, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 81, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 81, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 85, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 85, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 small {
   font-size: 80%; }
 
-/* line 89, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 89, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 95, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 95, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 sup {
   top: -0.5em; }
 
-/* line 98, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 98, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 sub {
   bottom: -0.25em; }
 
-/* line 101, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 101, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 img {
   border: 0; }
 
-/* line 104, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 104, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 107, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 107, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 figure {
   margin: 1em 40px; }
 
-/* line 110, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 110, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
-/* line 116, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 116, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 pre {
   overflow: auto; }
 
-/* line 122, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 122, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-/* line 130, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 130, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0; }
 
-/* line 135, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 135, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button {
   overflow: visible; }
 
-/* line 139, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 139, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button, select {
   text-transform: none; }
 
-/* line 145, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 145, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-/* line 150, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 150, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button[disabled], html input[disabled] {
   cursor: default; }
 
-/* line 154, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 154, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 158, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 158, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input {
   line-height: normal; }
 
-/* line 162, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 162, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input[type="checkbox"], input[type="radio"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
-/* line 169, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 169, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/* line 172, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 172, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 179, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 179, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 182, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 182, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 187, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 187, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 legend {
   border: 0;
   padding: 0; }
 
-/* line 191, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 191, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 textarea {
   overflow: auto; }
 
-/* line 194, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 194, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 optgroup {
   font-weight: bold; }
 
-/* line 197, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 197, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 202, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 202, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 td, th {
   padding: 0; }
 
-/* line 205, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 205, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 211, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 211, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 216, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 216, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-/* line 220, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 220, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 body {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
   background-color: #ffffff; }
 
-/* line 229, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 229, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
-/* line 234, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 234, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 a {
   color: #337ab7;
   text-decoration: none; }
 
-/* line 239, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 239, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 a:hover, a:focus {
   color: #23527c;
   text-decoration: underline; }
 
-/* line 243, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 243, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
-/* line 248, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 248, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 figure {
   margin: 0; }
 
-/* line 251, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 251, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 img {
   vertical-align: middle; }
 
-/* line 254, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 254, /Users/apple/Localhost/workpen/builds/development/sass/core/reset */
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -266,113 +266,113 @@ hr {
   border-top: 1px solid #eeeeee; }
 
 /* === Typography === */
-/* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 5, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
 html {
   font-family: 'Roboto', sans-serif; }
 
-/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 9, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
 blockquote {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   text-align: left; }
-  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 14, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
   blockquote * {
     width: 100%; }
-  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 18, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
   blockquote p {
     font-family: 'Roboto Slab', serif;
     font-weight: 200; }
-  /* line 23, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 23, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
   blockquote.large-blockquote {
     transition: all 0.3s ease-in-out; }
-    /* line 32, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 32, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
     blockquote.large-blockquote .design-quote {
       font-family: 'Roboto', sans-serif;
       font-size: 1.6rem;
       color: #8A8A8A;
       text-transform: uppercase;
       font-weight: 600; }
-    /* line 40, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 40, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
     blockquote.large-blockquote p {
       font-size: 3.2rem; }
-    /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 44, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
     blockquote.large-blockquote .byline {
       font-size: 2.2rem;
       text-align: right; }
 
-/* line 53, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 53, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
 h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   font-size: 3.2rem; }
 
-/* line 59, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 59, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
 .page-header {
   padding-bottom: 3rem; }
-  /* line 62, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 62, /Users/apple/Localhost/workpen/builds/development/sass/core/typography */
   .page-header h1 {
     margin-bottom: 0; }
 
 /* === Helpers === */
-/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .circle {
   border-radius: 50%; }
 
-/* line 7, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 7, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .center-align {
   margin-left: auto;
   margin-right: auto;
   display: block; }
 
-/* line 13, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 13, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .space-default {
   margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
     .space-default {
       margin-bottom: 3rem; } }
 
-/* line 21, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 21, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .space-double {
   margin-bottom: 3rem; }
   @media (min-width: 768px) {
     .space-double {
       margin-bottom: 6rem; } }
 
-/* line 29, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 29, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .space-triple {
   margin-bottom: 4.5rem; }
   @media (min-width: 768px) {
     .space-triple {
       margin-bottom: 9rem; } }
 
-/* line 37, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 37, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .space-quad {
   margin-bottom: 9rem; }
   @media (min-width: 768px) {
     .space-quad {
       margin-bottom: 12rem; } }
 
-/* line 45, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 45, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .space-cinco {
   margin-bottom: 12rem; }
   @media (min-width: 768px) {
     .space-cinco {
       margin-bottom: 15rem; } }
 
-/* line 53, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 53, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .clearfix {
   width: 100%;
   float: left;
   clear: both;
   height: 0px; }
-  /* line 59, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+  /* line 59, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
   .clearfix:before, .clearfix:after {
     display: table;
     content: "";
     width: 100%;
     float: left; }
 
-/* line 67, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 67, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .wrapper {
   background-image: -webkit-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
   background-image: -o-linear-gradient(#FFFFFF 30%, #F8F8F8 100%);
@@ -382,7 +382,7 @@ h1 {
   float: left;
   width: 100%; }
 
-/* line 77, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+/* line 77, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
 .aqua-gradient {
   background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
   background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -393,76 +393,76 @@ h1 {
   border-bottom: none;
   text-decoration: none;
   transition: all 0.3s ease-out; }
-  /* line 88, /www/sites/workpen/wwwroot/builds/development/sass/core/helpers */
+  /* line 88, /Users/apple/Localhost/workpen/builds/development/sass/core/helpers */
   .aqua-gradient:hover {
     background: #50C9C3;
     box-shadow: 0px 2px 0px 0px transparent;
     transition: all 0.3s ease-in; }
 
 @-webkit-keyframes pulse {
-  /* line 2, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 2, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   0% {
     -webkit-transform: scale(1); }
 
-  /* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 5, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   60% {
     -webkit-transform: scale(1.5); }
 
-  /* line 8, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 8, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   100% {
     -webkit-transform: scale(1); } }
 
 @-webkit-keyframes color {
-  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 14, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   0% {
     border-color: #8A8A8A; }
 
-  /* line 17, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 17, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   60% {
     border-color: #68DB12; }
 
-  /* line 20, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 20, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   100% {
     border-color: #8A8A8A; } }
 
 @-webkit-keyframes number {
-  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 26, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   0% {
     color: #2E323E; }
 
-  /* line 29, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 29, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   60% {
     color: transparent; }
 
-  /* line 32, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 32, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   100% {
     color: #8A8A8A; } }
 
 @-webkit-keyframes fadeIn {
-  /* line 38, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 38, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   0% {
     opacity: 0;
     transform: translateY(-20px); }
 
-  /* line 42, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 42, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   100% {
     transform: translateY(0);
     opacity: 1;
     display: block; } }
 
 @-webkit-keyframes fadeOut {
-  /* line 50, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 50, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   0% {
     transform: translateY(0);
     opacity: 1; }
 
-  /* line 54, /www/sites/workpen/wwwroot/builds/development/sass/core/animations */
+  /* line 54, /Users/apple/Localhost/workpen/builds/development/sass/core/animations */
   100% {
     opacity: 0;
     transform: translateY(-20px);
     display: none; } }
 
-/* line 1, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 1, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -470,873 +470,873 @@ h1 {
   padding-right: 15px;
   width: 100%; }
 
-/* line 23, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 23, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 29, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 29, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .row {
   margin-left: -15px;
   margin-right: -15px; }
 
-/* line 33, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 33, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 39, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 39, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
 
-/* line 42, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 42, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-12 {
   width: 100%; }
 
-/* line 45, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 45, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-11 {
   width: 91.66667%; }
 
-/* line 48, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 48, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-10 {
   width: 83.33333%; }
 
-/* line 51, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 51, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-9 {
   width: 75%; }
 
-/* line 54, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 54, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-8 {
   width: 66.66667%; }
 
-/* line 57, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 57, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-7 {
   width: 58.33333%; }
 
-/* line 60, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 60, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-6 {
   width: 50%; }
 
-/* line 63, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 63, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-5 {
   width: 41.66667%; }
 
-/* line 66, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 66, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-4 {
   width: 33.33333%; }
 
-/* line 69, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 69, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-3 {
   width: 25%; }
 
-/* line 72, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 72, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-2 {
   width: 16.66667%; }
 
-/* line 75, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 75, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-1 {
   width: 8.33333%; }
 
-/* line 78, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 78, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-12 {
   right: 100%; }
 
-/* line 81, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 81, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-11 {
   right: 91.66667%; }
 
-/* line 84, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 84, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-10 {
   right: 83.33333%; }
 
-/* line 87, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 87, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-9 {
   right: 75%; }
 
-/* line 90, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 90, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-8 {
   right: 66.66667%; }
 
-/* line 93, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 93, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-7 {
   right: 58.33333%; }
 
-/* line 96, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 96, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-6 {
   right: 50%; }
 
-/* line 99, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 99, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-5 {
   right: 41.66667%; }
 
-/* line 102, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 102, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-4 {
   right: 33.33333%; }
 
-/* line 105, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 105, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-3 {
   right: 25%; }
 
-/* line 108, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 108, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-2 {
   right: 16.66667%; }
 
-/* line 111, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 111, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-1 {
   right: 8.33333%; }
 
-/* line 114, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 114, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-pull-0 {
   right: auto; }
 
-/* line 117, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 117, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-12 {
   left: 100%; }
 
-/* line 120, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 120, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-11 {
   left: 91.66667%; }
 
-/* line 123, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 123, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-10 {
   left: 83.33333%; }
 
-/* line 126, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 126, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-9 {
   left: 75%; }
 
-/* line 129, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 129, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-8 {
   left: 66.66667%; }
 
-/* line 132, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 132, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-7 {
   left: 58.33333%; }
 
-/* line 135, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 135, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-6 {
   left: 50%; }
 
-/* line 138, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 138, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-5 {
   left: 41.66667%; }
 
-/* line 141, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 141, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-4 {
   left: 33.33333%; }
 
-/* line 144, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 144, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-3 {
   left: 25%; }
 
-/* line 147, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 147, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-2 {
   left: 16.66667%; }
 
-/* line 150, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 150, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-1 {
   left: 8.33333%; }
 
-/* line 153, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 153, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-push-0 {
   left: auto; }
 
-/* line 156, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 156, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-12 {
   margin-left: 100%; }
 
-/* line 159, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 159, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-11 {
   margin-left: 91.66667%; }
 
-/* line 162, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 162, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-10 {
   margin-left: 83.33333%; }
 
-/* line 165, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 165, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-9 {
   margin-left: 75%; }
 
-/* line 168, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 168, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-8 {
   margin-left: 66.66667%; }
 
-/* line 171, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 171, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-7 {
   margin-left: 58.33333%; }
 
-/* line 174, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 174, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-6 {
   margin-left: 50%; }
 
-/* line 177, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 177, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-5 {
   margin-left: 41.66667%; }
 
-/* line 180, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 180, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-4 {
   margin-left: 33.33333%; }
 
-/* line 183, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 183, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-3 {
   margin-left: 25%; }
 
-/* line 186, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 186, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-2 {
   margin-left: 16.66667%; }
 
-/* line 189, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 189, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-1 {
   margin-left: 8.33333%; }
 
-/* line 192, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 192, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .col-xs-offset-0 {
   margin-left: 0%; }
 
 @media (min-width: 768px) {
-  /* line 196, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 196, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
-  /* line 199, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 199, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-12 {
     width: 100%; }
 
-  /* line 202, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 202, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-11 {
     width: 91.66667%; }
 
-  /* line 205, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 205, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-10 {
     width: 83.33333%; }
 
-  /* line 208, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 208, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-9 {
     width: 75%; }
 
-  /* line 211, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 211, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-8 {
     width: 66.66667%; }
 
-  /* line 214, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 214, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-7 {
     width: 58.33333%; }
 
-  /* line 217, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 217, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-6 {
     width: 50%; }
 
-  /* line 220, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 220, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-5 {
     width: 41.66667%; }
 
-  /* line 223, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 223, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-4 {
     width: 33.33333%; }
 
-  /* line 226, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 226, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-3 {
     width: 25%; }
 
-  /* line 229, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 229, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-2 {
     width: 16.66667%; }
 
-  /* line 232, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 232, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-1 {
     width: 8.33333%; }
 
-  /* line 235, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 235, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-12 {
     right: 100%; }
 
-  /* line 238, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 238, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-11 {
     right: 91.66667%; }
 
-  /* line 241, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 241, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-10 {
     right: 83.33333%; }
 
-  /* line 244, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 244, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-9 {
     right: 75%; }
 
-  /* line 247, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 247, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-8 {
     right: 66.66667%; }
 
-  /* line 250, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 250, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-7 {
     right: 58.33333%; }
 
-  /* line 253, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 253, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-6 {
     right: 50%; }
 
-  /* line 256, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 256, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-5 {
     right: 41.66667%; }
 
-  /* line 259, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 259, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-4 {
     right: 33.33333%; }
 
-  /* line 262, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 262, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-3 {
     right: 25%; }
 
-  /* line 265, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 265, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-2 {
     right: 16.66667%; }
 
-  /* line 268, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 268, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-1 {
     right: 8.33333%; }
 
-  /* line 271, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 271, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-pull-0 {
     right: auto; }
 
-  /* line 274, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 274, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-12 {
     left: 100%; }
 
-  /* line 277, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 277, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-11 {
     left: 91.66667%; }
 
-  /* line 280, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 280, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-10 {
     left: 83.33333%; }
 
-  /* line 283, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 283, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-9 {
     left: 75%; }
 
-  /* line 286, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 286, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-8 {
     left: 66.66667%; }
 
-  /* line 289, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 289, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-7 {
     left: 58.33333%; }
 
-  /* line 292, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 292, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-6 {
     left: 50%; }
 
-  /* line 295, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 295, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-5 {
     left: 41.66667%; }
 
-  /* line 298, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 298, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-4 {
     left: 33.33333%; }
 
-  /* line 301, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 301, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-3 {
     left: 25%; }
 
-  /* line 304, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 304, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-2 {
     left: 16.66667%; }
 
-  /* line 307, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 307, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-1 {
     left: 8.33333%; }
 
-  /* line 310, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 310, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-push-0 {
     left: auto; }
 
-  /* line 313, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 313, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-12 {
     margin-left: 100%; }
 
-  /* line 316, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 316, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-11 {
     margin-left: 91.66667%; }
 
-  /* line 319, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 319, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-10 {
     margin-left: 83.33333%; }
 
-  /* line 322, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 322, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-9 {
     margin-left: 75%; }
 
-  /* line 325, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 325, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-8 {
     margin-left: 66.66667%; }
 
-  /* line 328, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 328, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-7 {
     margin-left: 58.33333%; }
 
-  /* line 331, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 331, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-6 {
     margin-left: 50%; }
 
-  /* line 334, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 334, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-5 {
     margin-left: 41.66667%; }
 
-  /* line 337, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 337, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-4 {
     margin-left: 33.33333%; }
 
-  /* line 340, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 340, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-3 {
     margin-left: 25%; }
 
-  /* line 343, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 343, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-2 {
     margin-left: 16.66667%; }
 
-  /* line 346, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 346, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-1 {
     margin-left: 8.33333%; }
 
-  /* line 349, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 349, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-sm-offset-0 {
     margin-left: 0%; }
  }
 
 @media (min-width: 992px) {
-  /* line 354, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 354, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
-  /* line 357, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 357, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-12 {
     width: 100%; }
 
-  /* line 360, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 360, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-11 {
     width: 91.66667%; }
 
-  /* line 363, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 363, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-10 {
     width: 83.33333%; }
 
-  /* line 366, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 366, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-9 {
     width: 75%; }
 
-  /* line 369, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 369, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-8 {
     width: 66.66667%; }
 
-  /* line 372, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 372, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-7 {
     width: 58.33333%; }
 
-  /* line 375, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 375, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-6 {
     width: 50%; }
 
-  /* line 378, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 378, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-5 {
     width: 41.66667%; }
 
-  /* line 381, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 381, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-4 {
     width: 33.33333%; }
 
-  /* line 384, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 384, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-3 {
     width: 25%; }
 
-  /* line 387, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 387, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-2 {
     width: 16.66667%; }
 
-  /* line 390, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 390, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-1 {
     width: 8.33333%; }
 
-  /* line 393, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 393, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-12 {
     right: 100%; }
 
-  /* line 396, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 396, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-11 {
     right: 91.66667%; }
 
-  /* line 399, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 399, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-10 {
     right: 83.33333%; }
 
-  /* line 402, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 402, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-9 {
     right: 75%; }
 
-  /* line 405, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 405, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-8 {
     right: 66.66667%; }
 
-  /* line 408, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 408, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-7 {
     right: 58.33333%; }
 
-  /* line 411, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 411, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-6 {
     right: 50%; }
 
-  /* line 414, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 414, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-5 {
     right: 41.66667%; }
 
-  /* line 417, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 417, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-4 {
     right: 33.33333%; }
 
-  /* line 420, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 420, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-3 {
     right: 25%; }
 
-  /* line 423, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 423, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-2 {
     right: 16.66667%; }
 
-  /* line 426, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 426, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-1 {
     right: 8.33333%; }
 
-  /* line 429, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 429, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-pull-0 {
     right: auto; }
 
-  /* line 432, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 432, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-12 {
     left: 100%; }
 
-  /* line 435, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 435, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-11 {
     left: 91.66667%; }
 
-  /* line 438, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 438, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-10 {
     left: 83.33333%; }
 
-  /* line 441, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 441, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-9 {
     left: 75%; }
 
-  /* line 444, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 444, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-8 {
     left: 66.66667%; }
 
-  /* line 447, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 447, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-7 {
     left: 58.33333%; }
 
-  /* line 450, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 450, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-6 {
     left: 50%; }
 
-  /* line 453, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 453, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-5 {
     left: 41.66667%; }
 
-  /* line 456, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 456, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-4 {
     left: 33.33333%; }
 
-  /* line 459, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 459, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-3 {
     left: 25%; }
 
-  /* line 462, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 462, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-2 {
     left: 16.66667%; }
 
-  /* line 465, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 465, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-1 {
     left: 8.33333%; }
 
-  /* line 468, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 468, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-push-0 {
     left: auto; }
 
-  /* line 471, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 471, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-12 {
     margin-left: 100%; }
 
-  /* line 474, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 474, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-11 {
     margin-left: 91.66667%; }
 
-  /* line 477, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 477, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-10 {
     margin-left: 83.33333%; }
 
-  /* line 480, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 480, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-9 {
     margin-left: 75%; }
 
-  /* line 483, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 483, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-8 {
     margin-left: 66.66667%; }
 
-  /* line 486, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 486, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-7 {
     margin-left: 58.33333%; }
 
-  /* line 489, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 489, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-6 {
     margin-left: 50%; }
 
-  /* line 492, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 492, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-5 {
     margin-left: 41.66667%; }
 
-  /* line 495, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 495, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-4 {
     margin-left: 33.33333%; }
 
-  /* line 498, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 498, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-3 {
     margin-left: 25%; }
 
-  /* line 501, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 501, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-2 {
     margin-left: 16.66667%; }
 
-  /* line 504, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 504, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-1 {
     margin-left: 8.33333%; }
 
-  /* line 507, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 507, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-md-offset-0 {
     margin-left: 0%; }
  }
 
 @media (min-width: 1200px) {
-  /* line 512, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 512, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
 
-  /* line 515, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 515, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-12 {
     width: 100%; }
 
-  /* line 518, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 518, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-11 {
     width: 91.66667%; }
 
-  /* line 521, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 521, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-10 {
     width: 83.33333%; }
 
-  /* line 524, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 524, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-9 {
     width: 75%; }
 
-  /* line 527, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 527, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-8 {
     width: 66.66667%; }
 
-  /* line 530, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 530, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-7 {
     width: 58.33333%; }
 
-  /* line 533, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 533, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-6 {
     width: 50%; }
 
-  /* line 536, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 536, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-5 {
     width: 41.66667%; }
 
-  /* line 539, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 539, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-4 {
     width: 33.33333%; }
 
-  /* line 542, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 542, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-3 {
     width: 25%; }
 
-  /* line 545, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 545, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-2 {
     width: 16.66667%; }
 
-  /* line 548, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 548, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-1 {
     width: 8.33333%; }
 
-  /* line 551, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 551, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-12 {
     right: 100%; }
 
-  /* line 554, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 554, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-11 {
     right: 91.66667%; }
 
-  /* line 557, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 557, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-10 {
     right: 83.33333%; }
 
-  /* line 560, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 560, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-9 {
     right: 75%; }
 
-  /* line 563, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 563, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-8 {
     right: 66.66667%; }
 
-  /* line 566, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 566, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-7 {
     right: 58.33333%; }
 
-  /* line 569, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 569, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-6 {
     right: 50%; }
 
-  /* line 572, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 572, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-5 {
     right: 41.66667%; }
 
-  /* line 575, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 575, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-4 {
     right: 33.33333%; }
 
-  /* line 578, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 578, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-3 {
     right: 25%; }
 
-  /* line 581, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 581, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-2 {
     right: 16.66667%; }
 
-  /* line 584, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 584, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-1 {
     right: 8.33333%; }
 
-  /* line 587, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 587, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-pull-0 {
     right: auto; }
 
-  /* line 590, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 590, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-12 {
     left: 100%; }
 
-  /* line 593, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 593, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-11 {
     left: 91.66667%; }
 
-  /* line 596, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 596, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-10 {
     left: 83.33333%; }
 
-  /* line 599, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 599, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-9 {
     left: 75%; }
 
-  /* line 602, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 602, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-8 {
     left: 66.66667%; }
 
-  /* line 605, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 605, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-7 {
     left: 58.33333%; }
 
-  /* line 608, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 608, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-6 {
     left: 50%; }
 
-  /* line 611, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 611, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-5 {
     left: 41.66667%; }
 
-  /* line 614, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 614, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-4 {
     left: 33.33333%; }
 
-  /* line 617, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 617, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-3 {
     left: 25%; }
 
-  /* line 620, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 620, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-2 {
     left: 16.66667%; }
 
-  /* line 623, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 623, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-1 {
     left: 8.33333%; }
 
-  /* line 626, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 626, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-push-0 {
     left: auto; }
 
-  /* line 629, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 629, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-12 {
     margin-left: 100%; }
 
-  /* line 632, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 632, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-11 {
     margin-left: 91.66667%; }
 
-  /* line 635, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 635, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-10 {
     margin-left: 83.33333%; }
 
-  /* line 638, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 638, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-9 {
     margin-left: 75%; }
 
-  /* line 641, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 641, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-8 {
     margin-left: 66.66667%; }
 
-  /* line 644, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 644, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-7 {
     margin-left: 58.33333%; }
 
-  /* line 647, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 647, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-6 {
     margin-left: 50%; }
 
-  /* line 650, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 650, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-5 {
     margin-left: 41.66667%; }
 
-  /* line 653, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 653, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-4 {
     margin-left: 33.33333%; }
 
-  /* line 656, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 656, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-3 {
     margin-left: 25%; }
 
-  /* line 659, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 659, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-2 {
     margin-left: 16.66667%; }
 
-  /* line 662, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 662, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-1 {
     margin-left: 8.33333%; }
 
-  /* line 665, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+  /* line 665, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
   .col-lg-offset-0 {
     margin-left: 0%; }
  }
 
-/* line 676, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 676, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
   content: " ";
   display: table; }
 
-/* line 683, /www/sites/workpen/wwwroot/builds/development/sass/core/grid */
+/* line 683, /Users/apple/Localhost/workpen/builds/development/sass/core/grid */
 .clearfix:after, .container:after, .container-fluid:after, .row:after {
   clear: both; }
 
-/* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 1, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .app {
   width: 100%;
   height: 100%;
@@ -1344,13 +1344,13 @@ h1 {
   float: left;
   clear: both; }
 
-/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 9, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .main {
   width: 100%;
   overflow-x: hidden;
   padding: 3rem;
   transition: all 0.6s ease-in-out; }
-  /* line 15, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+  /* line 15, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
   .main * {
     transition: all 0.15s ease-in-out; }
   @media (min-width: 768px) {
@@ -1362,7 +1362,7 @@ h1 {
       overflow-y: scroll;
       padding: 6rem; } }
 
-/* line 31, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 31, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .at-view-slide-in-left.ng-enter section {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1381,7 +1381,7 @@ h1 {
   z-index: 1;
   position: absolute; }
 
-/* line 50, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 50, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .at-view-slide-in-left.ng-enter-active section {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -1391,7 +1391,7 @@ h1 {
   opacity: 1;
   position: absolute; }
 
-/* line 60, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 60, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .at-view-slide-out-right.ng-leave section {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1410,7 +1410,7 @@ h1 {
   z-index: 3;
   position: absolute; }
 
-/* line 79, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 79, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .at-view-slide-out-right.ng-leave-active section {
   -webkit-transform: translate(100%, 0px);
   -moz-transform: translate(100%, 0px);
@@ -1419,7 +1419,7 @@ h1 {
   transform: translate(100%, 0px);
   opacity: 0; }
 
-/* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+/* line 1, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
 .sidebar {
   width: 100%;
   background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
@@ -1431,18 +1431,18 @@ h1 {
       width: 30%;
       position: fixed;
       height: 100%; } }
-  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  /* line 14, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
   .sidebar .avatar {
     margin-bottom: 1.5rem; }
 
-/* line 19, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+/* line 19, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
 .user-snapshot {
   margin-top: 6rem;
   margin-bottom: 6rem;
   padding-left: 3rem;
   padding-right: 3rem;
   color: #fff; }
-  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  /* line 26, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
   .user-snapshot .user-name {
     width: 100%;
     text-align: center;
@@ -1452,25 +1452,25 @@ h1 {
     font-weight: 300;
     line-height: 1em; }
 
-/* line 37, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+/* line 37, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
 .nav {
   width: 100%; }
-  /* line 40, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+  /* line 40, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
   .nav > ul {
     width: 100%;
     text-align: left; }
-    /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+    /* line 44, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
     .nav > ul > li {
       display: block;
       width: 100%;
       float: left; }
-      /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      /* line 52, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
       .nav > ul > li:first-child > a {
         border-top: 1px solid #474C5F; }
-      /* line 60, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      /* line 60, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
       .nav > ul > li:last-child > a {
         border-bottom: none; }
-      /* line 66, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+      /* line 66, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
       .nav > ul > li > a {
         display: block;
         width: 100%;
@@ -1484,13 +1484,13 @@ h1 {
         border-bottom: 1px solid #474C5F;
         text-transform: uppercase;
         position: relative; }
-        /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 80, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:before {
           position: absolute;
           left: 3rem;
           top: 16px;
           font-size: 2.2rem; }
-        /* line 87, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 87, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:after {
           width: 50px;
           height: 25px;
@@ -1501,7 +1501,7 @@ h1 {
           border-radius: 8px;
           text-align: center;
           line-height: 25px; }
-        /* line 103, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 103, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board:after {
           content: attr(data-count);
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1511,25 +1511,25 @@ h1 {
           border: none;
           color: #2E323E;
           transition: all 0.3s ease-in-out; }
-        /* line 116, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 116, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:before {
           color: #2E323E; }
-        /* line 120, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 120, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:after {
           background: none;
           box-shadow: none;
           border: 1px solid #2E323E;
           line-height: 22px; }
-        /* line 137, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 137, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.settings.active:before {
           color: #2E323E; }
-        /* line 147, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 147, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:hover {
           text-decoration: none;
           color: #CFD0D1;
           transition: all 0.3s ease-out;
           background: rgba(0, 0, 0, 0.2); }
-        /* line 154, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 154, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.active {
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1539,33 +1539,33 @@ h1 {
           color: #2E323E;
           border-bottom: none;
           text-decoration: none; }
-          /* line 164, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          /* line 164, /Users/apple/Localhost/workpen/builds/development/sass/partials/sidebar */
           .nav > ul > li > a.active:hover {
             background: #50C9C3;
             box-shadow: 0px 2px 0px 0px #50C9C3; }
 
 /* === Forms === */
-/* line 2, /www/sites/workpen/wwwroot/builds/development/sass/mixins/placeholder */
+/* line 2, /Users/apple/Localhost/workpen/builds/development/sass/mixins/placeholder */
 ::-webkit-input-placeholder {
   color: #8A8A8A; }
 
-/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/mixins/placeholder */
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/mixins/placeholder */
 :-moz-placeholder {
   color: #8A8A8A; }
 
-/* line 4, /www/sites/workpen/wwwroot/builds/development/sass/mixins/placeholder */
+/* line 4, /Users/apple/Localhost/workpen/builds/development/sass/mixins/placeholder */
 ::-moz-placeholder {
   color: #8A8A8A; }
 
-/* line 5, /www/sites/workpen/wwwroot/builds/development/sass/mixins/placeholder */
+/* line 5, /Users/apple/Localhost/workpen/builds/development/sass/mixins/placeholder */
 :-ms-input-placeholder {
   color: #8A8A8A; }
 
-/* line 7, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 7, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
 input {
   border-radius: 0px; }
 
-/* line 11, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 11, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -1576,10 +1576,10 @@ input[type="checkbox"] {
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease-in; }
-  /* line 22, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 22, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   input[type="checkbox"]:focus {
     outline: none; }
-  /* line 26, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 26, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   input[type="checkbox"]:checked {
     background: transparent;
     border-color: transparent;
@@ -1590,7 +1590,7 @@ input[type="checkbox"] {
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal; }
-    /* line 38, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    /* line 38, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
     input[type="checkbox"]:checked:before {
       content: " ";
       border: 2px solid #2E323E;
@@ -1609,7 +1609,7 @@ input[type="checkbox"] {
       -webkit-animation-iteration-count: 1;
       -webkit-animation-direction: normal; }
 
-/* line 59, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 59, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
 input[type="text"], input[type="email"], input[type="password"], textarea {
   color: #8A8A8A;
   padding: 1rem 1.5rem;
@@ -1620,21 +1620,21 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   text-indent: 0;
   margin-bottom: 1rem;
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.7), inset 0px 5px 17px rgba(0, 0, 0, 0.05); }
-  /* line 70, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 70, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     text-indent: 0;
     transition: all 0.3s ease-out;
     opacity: 0.5; }
-  /* line 77, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 77, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
     outline: none; }
-    /* line 80, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    /* line 80, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
     input[type="text"]:focus::-webkit-input-placeholder, input[type="email"]:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
       text-indent: -100%;
       opacity: 0;
       transition: all 0.3s ease-in; }
 
-/* line 92, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+/* line 92, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
 .task-form {
   width: 100%;
   clear: both;
@@ -1647,13 +1647,13 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   @media (min-width: 1280px) {
     .task-form {
       width: 60%; } }
-  /* line 108, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 108, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   .task-form input[type="text"] {
     width: 70%;
     display: inline-block;
     font-size: 1.5rem;
     height: 5rem; }
-  /* line 115, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+  /* line 115, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
   .task-form button {
     width: 22%;
     display: inline-block;
@@ -1667,7 +1667,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
         font-size: 1.5rem;
         width: 30%;
         top: -1px; } }
-    /* line 130, /www/sites/workpen/wwwroot/builds/development/sass/patterns/forms */
+    /* line 130, /Users/apple/Localhost/workpen/builds/development/sass/patterns/forms */
     .task-form button:before {
       font-family: 'icomoon';
       speak: none;
@@ -1688,7 +1688,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
           font-size: 1.5rem; } }
 
 /* == Buttons == */
-/* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/buttons */
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/patterns/buttons */
 .btn {
   background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
   background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1702,7 +1702,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   text-transform: uppercase;
   transition: all 0.1s ease-out;
   padding: 1rem 2rem; }
-  /* line 19, /www/sites/workpen/wwwroot/builds/development/sass/patterns/buttons */
+  /* line 19, /Users/apple/Localhost/workpen/builds/development/sass/patterns/buttons */
   .btn:hover {
     background: #50C9C3;
     box-shadow: 0px 2px 0px 0px transparent;
@@ -1715,7 +1715,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   font-weight: normal;
   font-style: normal; }
 
-/* line 12, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 12, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
@@ -1728,58 +1728,93 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 26, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 26, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-edit:before {
   content: "\65"; }
 
-/* line 29, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 29, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-cancel:before {
   content: "\63"; }
 
-/* line 32, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 32, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-save:before {
   content: "\66"; }
 
-/* line 35, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 35, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-add:before {
   content: "\61"; }
 
-/* line 38, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 38, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-delete:before {
   content: "\64"; }
 
-/* line 41, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 41, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-logout:before {
   content: "\6c"; }
 
-/* line 44, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 44, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-my-board:before {
   content: "\62"; }
 
-/* line 47, /www/sites/workpen/wwwroot/builds/development/sass/patterns/icons */
+/* line 47, /Users/apple/Localhost/workpen/builds/development/sass/patterns/icons */
 .icon-settings:before {
   content: "\73"; }
 
 /* === Rows === */
+<<<<<<< HEAD
 /* line 3, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .wrapper.task-wrapper {
   padding: 0; }
 
 /* line 7, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+/* line 3, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.task-filters {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 0.5rem; }
+  /* line 8, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .task-filters .filter {
+    display: inline-block;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid #bdbdbd;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #bdbdbd;
+    cursor: pointer; }
+    /* line 19, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+    .task-filters .filter.active {
+      color: #8A8A8A; }
+    /* line 23, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+    .task-filters .filter:first-child {
+      border-left: none; }
+
+/* line 31, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 .tasks {
   float: left;
   display: block;
   width: 100%;
   clear: both; }
 
+<<<<<<< HEAD
 /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+/* line 38, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 .tasks ul {
   width: 100%;
   clear: both;
   float: left;
   transition: height 0.3s ease-in-out; }
 
+<<<<<<< HEAD
 /* line 21, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+/* line 44, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 .tasks li {
   padding: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1788,7 +1823,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   clear: both;
   display: table; }
+<<<<<<< HEAD
   /* line 30, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  /* line 54, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1799,7 +1838,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
+<<<<<<< HEAD
   /* line 42, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  /* line 66, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li.ng-enter, .tasks li.ng-leave {
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1810,30 +1853,45 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
+<<<<<<< HEAD
   /* line 54, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  /* line 78, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li.ng-enter {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
+<<<<<<< HEAD
     transform: scale(0.01, 0.01);
     height: 0;
     overflow: hidden; }
   /* line 64, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+    transform: scale(0.01, 0.01); }
+  /* line 86, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li.ng-leave-active {
     -webkit-transform: scale(0.01, 0.01);
     -moz-transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
     -o-transform: scale(0.01, 0.01);
+<<<<<<< HEAD
     transform: scale(0.01, 0.01);
     height: 0;
     overflow: hidden; }
   /* line 74, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+    transform: scale(0.01, 0.01); }
+  /* line 94, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li.ng-enter-active {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
+<<<<<<< HEAD
     transform: scale(1, 1);
     height: auto;
     overflow: auto; }
@@ -1852,10 +1910,33 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   .tasks li.complete .task-info {
     text-decoration: line-through; }
   /* line 110, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+    transform: scale(1, 1); }
+  /* line 106, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  /* line 111, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li:first-child {
+    padding-top: 0; }
+  /* line 115, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li * {
+    opacity: 1;
+    transition: all 0.3s linear; }
+  /* line 122, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li.complete > * {
+    opacity: 0.3;
+    transition: all 0.3s linear; }
+  /* line 127, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li.complete .task-info {
+    text-decoration: line-through; }
+  /* line 133, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li .task-status, .tasks li .task-info, .tasks li .task-actions {
     display: table-cell;
     vertical-align: middle;
     float: none; }
+<<<<<<< HEAD
   /* line 116, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .tasks li .task-status {
     width: 20%; }
@@ -1864,11 +1945,25 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 60%;
     word-break: break-word; }
   /* line 125, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  /* line 139, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li .task-status {
+    width: 20%; }
+  /* line 143, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .tasks li .task-info {
+    width: 60%;
+    word-break: break-word; }
+  /* line 148, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .tasks li .task-actions {
     width: 20%;
     text-align: right; }
 
+<<<<<<< HEAD
 /* line 131, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+/* line 154, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 .task-info textarea {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -1890,6 +1985,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   overflow: hidden;
   width: 100%;
   resize: none;
+<<<<<<< HEAD
   border: none; }
   /* line 137, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .task-info textarea.edit-this-task {
@@ -1953,6 +2049,19 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     overflow: hidden; }
 
 /* line 152, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  border: none;
+  display: none; }
+  /* line 160, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .task-info textarea.edit-this-task {
+    display: block; }
+
+/* line 167, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.task-info span.edit-this-task {
+  display: none; }
+
+/* line 172, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 .delete-task, .edit-task, .cancel-edit-task, .save-task {
   cursor: pointer;
   font-size: 2rem;
@@ -1962,6 +2071,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   z-index: 10;
   color: #8A8A8A;
   font-size: 2.9rem; }
+<<<<<<< HEAD
   /* line 162, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
   .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
     color: #2E323E; }
@@ -1973,10 +2083,24 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   .edit-task.edit-this-task {
     display: none; }
   /* line 174, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+  /* line 182, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .delete-task:hover, .edit-task:hover, .cancel-edit-task:hover, .save-task:hover {
+    color: #2E323E; }
+
+/* line 187, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.edit-task {
+  font-size: 2.4rem; }
+  /* line 190, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .edit-task.edit-this-task {
+    display: none; }
+  /* line 194, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .edit-task:before {
     top: -2.5px;
     position: relative; }
 
+<<<<<<< HEAD
 /* line 180, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
 .save-task {
   display: none;
@@ -1998,6 +2122,29 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     top: -2.5px;
     position: relative; }
   /* line 203, /www/sites/workpen/wwwroot/builds/development/sass/patterns/rows */
+=======
+/* line 200, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.save-task {
+  display: none;
+  font-size: 2.3rem; }
+  /* line 204, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .save-task:before {
+    top: -2.5px;
+    position: relative; }
+  /* line 209, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .save-task.edit-this-task {
+    display: inline-block; }
+
+/* line 214, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+.cancel-edit-task {
+  display: none;
+  font-size: 2.3rem; }
+  /* line 218, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+  .cancel-edit-task:before {
+    top: -2.5px;
+    position: relative; }
+  /* line 223, /Users/apple/Localhost/workpen/builds/development/sass/patterns/rows */
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
   .cancel-edit-task.edit-this-task {
     display: inline-block; }
 

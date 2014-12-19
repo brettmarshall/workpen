@@ -10,10 +10,20 @@
 		<button type="submit" class="btn">Add Task</button>
 	</form>
 
+<<<<<<< HEAD
 	<div class="wrapper task-wrapper">
+=======
+	<div class="task-filters">
+		<span class="filter-active filter active" task-filter ng-click="filterList = null">All ( {{tasks.length}} )</span>
+		<span class="filter-active filter" task-filter ng-click="filterList = {taskCompleted: false}">Active ( {{(tasks|filter:{taskCompleted:false}).length}} )</span>
+		<span class="filter-completed filter" task-filter ng-click="filterList = {taskCompleted: true}">Completed ( {{(tasks|filter:{taskCompleted:true}).length}} )</span>
+		<!-- <span class="filter-active">Priority</span> -->
+	</div>
+	<div class="wrapper">	
+>>>>>>> 1326561704f3269e675f6e9220911f8e8796a15f
 		<div class="tasks">
 			<ul>
-				<li ng-repeat="task in tasks | orderBy:'taskCompleted':false" ng-class="{ 'complete': task.taskCompleted }">
+				<li ng-repeat="task in tasks | filter:filterList | orderBy:'taskCompleted':false" ng-class="{ 'complete': task.taskCompleted }">
 					<div class="task-status">
 						<input type="checkbox" ng-checked="{{task.taskCompleted}}" ng-click="completedToggle($event)" data-key="{{ task.taskKey }}" />
 					</div>
