@@ -1359,13 +1359,13 @@ h1 {
     fill: #fff; }
   /* line 27, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-top {
-    transform: translateY(0); }
+    -webkit-transform: translateY(0); }
   /* line 32, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-middle {
-    transform: translateY(8px); }
+    -webkit-transform: translateY(8px); }
   /* line 37, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-bottom {
-    transform: translateY(16px); }
+    -webkit-transform: translateY(16px); }
 
 /* line 44, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
 .nav-icon.active-nav {
@@ -1380,14 +1380,14 @@ h1 {
     margin-bottom: -7px; }
     /* line 56, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-top {
-      transform: rotate(45deg) translateY(-5px) translateX(2px); }
+      -webkit-transform: rotate(45deg) translateY(-5px) translateX(2px); }
     /* line 61, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-middle {
-      transform: translateY(8px);
+      -webkit-transform: translateY(8px);
       opacity: 0; }
     /* line 66, /Users/apple/Localhost/workpen/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-bottom {
-      transform: rotate(-45deg) translateY(16px) translateX(-11px); }
+      -webkit-transform: rotate(-45deg) translateY(16px) translateX(-11px); }
 
 /* line 1, /Users/apple/Localhost/workpen/builds/development/sass/partials/main */
 .app {
