@@ -8,6 +8,9 @@
 </head>
 <body>
   <section class="app">
+    <header class="app-header">
+      <span class="nav-icon" nav-open ng-include="'img/nav-icon.svg'"></span>
+    </header>
     <aside class="sidebar" ng-include="'views/sidebar.html'" ng-controller="UserController"></aside>
     <div class="main">  
       <main ng-view ng-cloak class="at-view-slide-in-left at-view-slide-out-right"></main>

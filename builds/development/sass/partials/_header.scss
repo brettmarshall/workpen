@@ -1,0 +1,72 @@
+.app-header	{
+	padding: 0;
+	background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
+	background-image: -o-linear-gradient(#424757 0%, #262934 100%);
+	background-image: linear-gradient(#424757 0%, #262934 100%);
+
+	@include breakpoint($small)	{
+		display: none;
+	}
+}
+
+.nav-icon	{
+	cursor: pointer;
+	padding: $space;
+	background: rgba(0, 0, 0, 0.3);
+
+	*	{
+		transition: all 0.3s ease-out;
+	}	
+
+	#nav-icon	{
+	 
+		.bar	{
+			fill: #fff;
+		}
+
+		.bar-top	{
+			transform: translateY(0);
+
+		}
+
+		.bar-middle	{
+			transform: translateY(8px);
+			
+		}
+
+		.bar-bottom	{
+			transform: translateY(16px);
+		}	
+
+	}	
+}
+
+.nav-icon.active-nav	{
+	padding: $space;
+	background: rgba(0, 0, 0, 0.3);
+
+	*	{
+		transition: all 0.3s ease-in;
+	}
+
+	#nav-icon	{
+		height: 31px;
+		margin-bottom: -7px;
+
+		.bar-top	{
+			transform: rotate(45deg) translateY(-5px) translateX(2px);
+
+		}
+
+		.bar-middle	{
+			transform: translateY(8px);
+			opacity: 0;
+		}
+
+		.bar-bottom	{
+			transform: rotate(-45deg) translateY(16px) translateX(-11px);
+		}	
+
+	}	
+}
+

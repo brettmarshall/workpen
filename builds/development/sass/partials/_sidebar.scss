@@ -4,12 +4,33 @@
 	background-image: -o-linear-gradient(#424757 0%, #262934 100%);
 	background-image: linear-gradient(#424757 0%, #262934 100%);	
 	float: left;
+	position: fixed;
+	left: -100%;
+	height: 100%;
+	transition: all 0.3s ease-out;
 
 	@include breakpoint($small)	{
 		width: 30%;
 		position: fixed;
 		height: 100%;
+		left: 0;
 	}
+
+	@include breakpoint($medium)	{
+		width: 350px;
+		position: fixed;
+		height: 100%;
+	}
+
+	&.active-nav	{
+
+		@media (max-width: 767px)	{
+			left: 0;
+			width: 50%;
+			transition: all 0.3s ease-in;
+		}
+
+	}	
 
 	.avatar	{
 		margin-bottom: $space / 2;

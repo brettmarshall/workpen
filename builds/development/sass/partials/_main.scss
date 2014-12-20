@@ -10,20 +10,41 @@
 	width: 100%;
 	overflow-x: hidden;	
 	padding: $space;
-	transition: all 0.6s ease-in-out;
+	transition: all 0.3s ease-out;
 
 	*	{
 		transition: all 0.15s ease-in-out;
 	}
 
-	@include breakpoint($small)	{
-		float: left;
-		left: 30%;
-		width: 70%;
-		position: relative;
-		overflow-y: scroll;
-		padding: $space * 2;
-	}
+   @include breakpoint($small) {
+        float: left;
+        left: 30%;
+        width: 70%;
+        position: relative;
+        overflow-y: scroll;
+        padding: $space * 2;
+    } 
+
+    @include breakpoint($medium) {
+        float: left;
+        left: 350px;
+        width: calc(100% - 350px);
+        position: relative;
+        overflow-y: scroll;
+        padding: $space * 2;
+    }
+
+    &.active-nav {
+
+        @media (max-width: 767px) {
+            position: relative;
+            left: 50%;
+            transition: all 0.3s ease-in;
+            
+        }
+
+    }    
+
 }
 
 
