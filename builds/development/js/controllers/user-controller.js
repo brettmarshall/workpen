@@ -10,7 +10,7 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5", "$rootScope",
         var user_id = authData.uid;    
 
         // gets the data specific to the logged in user
-        var user = new Firebase("https://workpen.firebaseio.com/users/" + user_id);
+        var user = ref.child('users/' + user_id);
 
         // gets the users tasks
         var tasks = user.child('tasks');

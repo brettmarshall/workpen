@@ -18,7 +18,9 @@ gulp.task('js', function() {
     'builds/development/js/lib/firebase/firebase.js',
     'builds/development/js/lib/angularfire/dist/angularfire.min.js',
     'builds/development/js/lib/angular-md5/angular-md5.min.js',
-    'builds/development/js/lib/fastclick/lib/fastclick.js'
+    'builds/development/js/lib/fastclick/lib/fastclick.js',
+    'builds/development/js/lib/angular-resource/angular-resource.min.js',
+    'builds/development/js/lib/angular-file.js'
   ])
     .pipe(concat('lib.js'))
     .pipe(gulp.dest('builds/development/js'))      
@@ -31,6 +33,7 @@ gulp.task('footer_js', function() {
     'builds/development/js/controllers/login-controller.js',
     'builds/development/js/controllers/register-controller.js',
     'builds/development/js/controllers/list-controller.js',
+    'builds/development/js/controllers/upload-controller.js',
     'builds/development/js/directives/nav-directive.js',
     'builds/development/js/directives/task-filter-directive.js',
     'builds/development/js/directives/nav-open-directive.js'

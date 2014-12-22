@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5'])
+var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5', 'ur.file', 'ngResource'])
 .run(function() {
   FastClick.attach(document.body);
 });
@@ -6,13 +6,14 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angula
 var ref = new Firebase("https://workpen.firebaseio.com/");
 
 
-myApp.controller("LogoutController", ["$scope", "$firebase", "$firebaseAuth",
-  function($scope, $firebase, $firebaseAuth) {
+myApp.controller("LogoutController", ["$scope", "$firebase", "$firebaseAuth", "$rootScope",
+  function($scope, $firebase, $firebaseAuth, $rootScope) {
     $scope.authObj = $firebaseAuth(ref);   
     console.log($scope.authObj)
 
     jQuery('#logout').on('click', function(e)  {
       $scope.authObj.$unauth();
+      $rootScope.loggedIn = false;
       window.location = '/#/login';
       return false;
     });
@@ -51,6 +52,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller:  'LogoutController'
     },  {
       controller: 'UserController'
+    },  {
+      controller: 'UploadController'      
     }).     
 
 

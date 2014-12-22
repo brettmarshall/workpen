@@ -1,5 +1,5 @@
-myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
-  function($scope, $firebase, $firebaseAuth) {
+myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth", "$rootScope",
+  function($scope, $firebase, $firebaseAuth, $rootScope) {
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
     // download the data into a local object
@@ -7,7 +7,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
     // registers the user and logs them in and takes them to their task list
     // if there is an error, it just throws and error for now. need to do something with that.
-    $scope.register = function(data)	{
+    $scope.register = function(data)  {
 
         // grabs the email, password firstname and lastname
         var email = $scope.email;
@@ -16,7 +16,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
         var lastname = $scope.lastname;
 
       // accesses the authObj, which holds functions like createUser, removeUser, etc.
-    	$scope.authObj = $firebaseAuth(ref);
+      $scope.authObj = $firebaseAuth(ref);
 
         // creates the user
         $scope.authObj.$createUser(email, pass).then(function() {
@@ -31,7 +31,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
           // creates an object to hold all the user's
           // information
-          ref.child('users/' + authData.uid).$set({
+          ref.child('users/' + authData.uid).set({
             info: {
               firstname : firstname,
               lastname : lastname,
@@ -41,6 +41,27 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
         }).then(function(authData) { // then redirect the user to their task list                    
 
+
+            var authData = ref.getAuth();
+
+            var user_id = authData.uid;    
+
+            // gets the data specific to the logged in user
+            var user = ref.child('users/' + user_id);    
+
+            var userInfo = user.child('info');
+
+
+
+            userInfo.on("value", function(snapshot) {
+                $rootScope.userInfo = snapshot.val();
+                $rootScope.avatar = md5.createHash($scope.userInfo.email || '');
+
+            }, function (errorObject) {
+              console.log("The read failed: " + errorObject.code);
+            });
+
+          $rootScope.loggedIn = true;
           window.location = '/#/home';
 
         }).catch(function(error) { // if there's an error, grab the error

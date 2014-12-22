@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5'])
+var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angular-md5', 'ur.file', 'ngResource'])
 .run(function() {
   FastClick.attach(document.body);
 });
@@ -6,13 +6,14 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'firebase', 'angula
 var ref = new Firebase("https://workpen.firebaseio.com/");
 
 
-myApp.controller("LogoutController", ["$scope", "$firebase", "$firebaseAuth",
-  function($scope, $firebase, $firebaseAuth) {
+myApp.controller("LogoutController", ["$scope", "$firebase", "$firebaseAuth", "$rootScope",
+  function($scope, $firebase, $firebaseAuth, $rootScope) {
     $scope.authObj = $firebaseAuth(ref);   
     console.log($scope.authObj)
 
     jQuery('#logout').on('click', function(e)  {
       $scope.authObj.$unauth();
+      $rootScope.loggedIn = false;
       window.location = '/#/login';
       return false;
     });
@@ -51,6 +52,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller:  'LogoutController'
     },  {
       controller: 'UserController'
+    },  {
+      controller: 'UploadController'      
     }).     
 
 
@@ -80,7 +83,7 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5", "$rootScope",
         var user_id = authData.uid;    
 
         // gets the data specific to the logged in user
-        var user = new Firebase("https://workpen.firebaseio.com/users/" + user_id);
+        var user = ref.child('users/' + user_id);
 
         // gets the users tasks
         var tasks = user.child('tasks');
@@ -120,8 +123,8 @@ myApp.controller("UserController", ["$scope", "$firebase", "md5", "$rootScope",
 
   }
 ]);
-myApp.controller("LoginController", ["$scope", "$firebase", "$firebaseAuth",
-  function($scope, $firebase, $firebaseAuth) {
+myApp.controller("LoginController", ["$scope", "$firebase", "$firebaseAuth", "$rootScope", "md5",
+  function($scope, $firebase, $firebaseAuth, $rootScope, md5) {
 
     $scope.authObj = $firebaseAuth(ref);
 
@@ -132,7 +135,28 @@ myApp.controller("LoginController", ["$scope", "$firebase", "$firebaseAuth",
           password: $scope.password
 
         }).then(function(authData) {
-          window.location = '/#/home';
+
+            var authData = ref.getAuth();
+
+            var user_id = authData.uid;    
+
+            // gets the data specific to the logged in user
+            var user = ref.child('users/' + user_id);    
+
+            var userInfo = user.child('info');
+
+
+
+            userInfo.on("value", function(snapshot) {
+                $rootScope.userInfo = snapshot.val();
+                $rootScope.avatar = md5.createHash($scope.userInfo.email || '');
+
+            }, function (errorObject) {
+              console.log("The read failed: " + errorObject.code);
+            });  
+
+            $rootScope.loggedIn = true;
+            window.location = '/#/home';
 
         }).catch(function(error) {
           $scope.error = error;
@@ -142,8 +166,8 @@ myApp.controller("LoginController", ["$scope", "$firebase", "$firebaseAuth",
     }
   }
 ]);
-myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
-  function($scope, $firebase, $firebaseAuth) {
+myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth", "$rootScope",
+  function($scope, $firebase, $firebaseAuth, $rootScope) {
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
     // download the data into a local object
@@ -151,7 +175,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
     // registers the user and logs them in and takes them to their task list
     // if there is an error, it just throws and error for now. need to do something with that.
-    $scope.register = function(data)	{
+    $scope.register = function(data)  {
 
         // grabs the email, password firstname and lastname
         var email = $scope.email;
@@ -160,7 +184,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
         var lastname = $scope.lastname;
 
       // accesses the authObj, which holds functions like createUser, removeUser, etc.
-    	$scope.authObj = $firebaseAuth(ref);
+      $scope.authObj = $firebaseAuth(ref);
 
         // creates the user
         $scope.authObj.$createUser(email, pass).then(function() {
@@ -175,7 +199,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
           // creates an object to hold all the user's
           // information
-          ref.child('users/' + authData.uid).$set({
+          ref.child('users/' + authData.uid).set({
             info: {
               firstname : firstname,
               lastname : lastname,
@@ -185,6 +209,27 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
 
         }).then(function(authData) { // then redirect the user to their task list                    
 
+
+            var authData = ref.getAuth();
+
+            var user_id = authData.uid;    
+
+            // gets the data specific to the logged in user
+            var user = ref.child('users/' + user_id);    
+
+            var userInfo = user.child('info');
+
+
+
+            userInfo.on("value", function(snapshot) {
+                $rootScope.userInfo = snapshot.val();
+                $rootScope.avatar = md5.createHash($scope.userInfo.email || '');
+
+            }, function (errorObject) {
+              console.log("The read failed: " + errorObject.code);
+            });
+
+          $rootScope.loggedIn = true;
           window.location = '/#/home';
 
         }).catch(function(error) { // if there's an error, grab the error
@@ -198,6 +243,7 @@ myApp.controller("RegisterController", ["$scope", "$firebase", "$firebaseAuth",
   }
 
 ]);
+
 myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$interval",
     function($scope, $firebase, md5, $http, $interval) {
 
@@ -211,7 +257,7 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
         var user_id = authData.uid;
 
         // gets the data specific to the logged in user
-        var user = new Firebase("https://workpen.firebaseio.com/users/" + user_id);
+        var user = ref.child('users/' + user_id);
 
         // gets the users tasks
         var tasks = user.child('tasks');
@@ -436,6 +482,27 @@ myApp.controller("ListController", ["$scope", "$firebase", "md5", "$http", "$int
 
   }
 
+]);
+myApp.controller("UploadController", ["$scope", "$firebase", "$rootScope", "$resource",
+    function($scope, $firebase, $rootScope, $resource) {
+
+        var Files = $resource('/files/:id', { id: "@id" });
+
+        angular.extend($scope, {
+
+            model: { file: null },
+
+            upload: function(model) {
+                Files.prototype.$save.call(model.file, function(self, headers) {
+                    console.log(model)
+                    // Handle server response
+                });
+            }
+        });   
+
+
+
+    }
 ]);
 /* Adds active link functionality */
 
