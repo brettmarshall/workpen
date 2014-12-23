@@ -106,6 +106,7 @@
 				}
 
 				&:after	{
+					display: none;
 					width: 50px;
 					height: 25px;
 					position: absolute;
@@ -115,6 +116,10 @@
 					border-radius: 8px;	
 					text-align: center;
 					line-height: 25px;
+					
+					@include breakpoint(410px)	{
+						display: block;
+					}
 												
 				}				
 

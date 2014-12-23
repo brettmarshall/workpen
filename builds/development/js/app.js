@@ -53,7 +53,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     },  {
       controller: 'UserController'
     },  {
-      controller: 'UploadController'      
+      controller: 'SettingsController'      
     }).     
 
 

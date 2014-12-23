@@ -218,47 +218,46 @@ td, th {
 
 /* line 216, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 html {
-  font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-/* line 220, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 219, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 body {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
   background-color: #ffffff; }
 
-/* line 229, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 228, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
-/* line 234, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 233, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a {
   color: #337ab7;
   text-decoration: none; }
 
-/* line 239, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 238, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a:hover, a:focus {
   color: #23527c;
   text-decoration: underline; }
 
-/* line 243, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 242, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
-/* line 248, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 247, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 figure {
   margin: 0; }
 
-/* line 251, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 250, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 img {
   vertical-align: middle; }
 
-/* line 254, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
+/* line 253, /www/sites/workpen/wwwroot/builds/development/sass/core/reset */
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -268,48 +267,52 @@ hr {
 /* === Typography === */
 /* line 5, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 html {
+  font-size: 8px;
   font-family: 'Roboto', sans-serif; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 10px; } }
 
-/* line 9, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 blockquote {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   text-align: left; }
-  /* line 14, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 19, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote * {
     width: 100%; }
-  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 23, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote p {
     font-family: 'Roboto Slab', serif;
     font-weight: 200; }
-  /* line 23, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 28, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   blockquote.large-blockquote {
     transition: all 0.3s ease-in-out; }
-    /* line 32, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 37, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote .design-quote {
       font-family: 'Roboto', sans-serif;
       font-size: 1.6rem;
       color: #8A8A8A;
       text-transform: uppercase;
       font-weight: 600; }
-    /* line 40, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 45, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote p {
       font-size: 3.2rem; }
-    /* line 44, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+    /* line 49, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
     blockquote.large-blockquote .byline {
       font-size: 2.2rem;
       text-align: right; }
 
-/* line 53, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 58, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   font-size: 3.2rem; }
 
-/* line 59, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+/* line 64, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
 .page-header {
   padding-bottom: 3rem; }
-  /* line 62, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
+  /* line 67, /www/sites/workpen/wwwroot/builds/development/sass/core/typography */
   .page-header h1 {
     margin-bottom: 0; }
 
@@ -1341,53 +1344,57 @@ h1 {
   padding: 0;
   background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
   background-image: -o-linear-gradient(#424757 0%, #262934 100%);
-  background-image: linear-gradient(#424757 0%, #262934 100%); }
+  background-image: linear-gradient(#424757 0%, #262934 100%);
+  height: 6.4rem; }
   @media (min-width: 768px) {
     .app-header {
       display: none; } }
 
-/* line 12, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+/* line 13, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
 .nav-icon {
   cursor: pointer;
-  padding: 3rem;
-  background: rgba(0, 0, 0, 0.3); }
-  /* line 17, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  padding: 1.7rem 2rem 2rem 2rem;
+  float: left;
+  height: 6.4rem;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-out; }
+  /* line 21, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon * {
     transition: all 0.3s ease-out; }
-  /* line 23, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  /* line 27, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar {
     fill: #fff; }
-  /* line 27, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  /* line 31, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-top {
     -webkit-transform: translateY(0); }
-  /* line 32, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  /* line 36, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-middle {
-    -webkit-transform: translateY(8px); }
-  /* line 37, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+    -webkit-transform: translateY(0.8rem); }
+  /* line 41, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon #nav-icon .bar-bottom {
-    -webkit-transform: translateY(16px); }
+    -webkit-transform: translateY(1.6rem); }
 
-/* line 44, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+/* line 48, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
 .nav-icon.active-nav {
-  padding: 3rem;
-  background: rgba(0, 0, 0, 0.3); }
-  /* line 48, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  padding: 1.6rem 2rem 2rem 2rem;
+  -webkit-transition: all 0.3s ease-in; }
+  /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon.active-nav * {
     transition: all 0.3s ease-in; }
-  /* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+  /* line 56, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
   .nav-icon.active-nav #nav-icon {
     height: 31px;
     margin-bottom: -7px; }
-    /* line 56, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+    /* line 60, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-top {
-      -webkit-transform: rotate(45deg) translateY(-5px) translateX(2px); }
-    /* line 61, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+      -webkit-transform: rotate(45deg) translateY(-1rem) translateX(-0.2rem); }
+    /* line 65, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-middle {
-      -webkit-transform: translateY(8px);
+      -webkit-transform: translateY(0.8rem);
       opacity: 0; }
-    /* line 66, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
+    /* line 70, /www/sites/workpen/wwwroot/builds/development/sass/partials/header */
     .nav-icon.active-nav #nav-icon .bar-bottom {
-      -webkit-transform: rotate(-45deg) translateY(16px) translateX(-11px); }
+      -webkit-transform: rotate(-45deg) translateY(1.6rem) translateX(-1.1rem); }
 
 /* line 1, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .app {
@@ -1401,9 +1408,12 @@ h1 {
 .main {
   width: 100%;
   overflow-x: hidden;
+  position: fixed;
+  min-height: 100%;
+  left: 0;
   padding: 3rem;
   transition: all 0.3s ease-out; }
-  /* line 15, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+  /* line 18, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
   .main * {
     transition: all 0.15s ease-in-out; }
   @media (min-width: 768px) {
@@ -1424,11 +1434,10 @@ h1 {
       padding: 6rem; } }
   @media (max-width: 767px) {
     .main.active-nav {
-      position: relative;
       left: 50%;
       transition: all 0.3s ease-in; } }
 
-/* line 52, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 54, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .at-view-slide-in-left.ng-enter section {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1447,7 +1456,7 @@ h1 {
   z-index: 1;
   position: absolute; }
 
-/* line 71, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 73, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .at-view-slide-in-left.ng-enter-active section {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -1457,7 +1466,7 @@ h1 {
   opacity: 1;
   position: absolute; }
 
-/* line 81, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 83, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .at-view-slide-out-right.ng-leave section {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1476,7 +1485,7 @@ h1 {
   z-index: 3;
   position: absolute; }
 
-/* line 100, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
+/* line 102, /www/sites/workpen/wwwroot/builds/development/sass/partials/main */
 .at-view-slide-out-right.ng-leave-active section {
   -webkit-transform: translate(100%, 0px);
   -moz-transform: translate(100%, 0px);
@@ -1573,6 +1582,7 @@ h1 {
           font-size: 2.2rem; }
         /* line 108, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:after {
+          display: none;
           width: 50px;
           height: 25px;
           position: absolute;
@@ -1582,7 +1592,10 @@ h1 {
           border-radius: 8px;
           text-align: center;
           line-height: 25px; }
-        /* line 124, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          @media (min-width: 410px) {
+            .nav > ul > li > a:after {
+              display: block; } }
+        /* line 129, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board:after {
           content: attr(data-count);
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1592,25 +1605,25 @@ h1 {
           border: none;
           color: #2E323E;
           transition: all 0.3s ease-in-out; }
-        /* line 137, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 142, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:before {
           color: #2E323E; }
-        /* line 141, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 146, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.my-board.active:after {
           background: none;
           box-shadow: none;
           border: 1px solid #2E323E;
           line-height: 22px; }
-        /* line 158, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 163, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.settings.active:before {
           color: #2E323E; }
-        /* line 168, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 173, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a:hover {
           text-decoration: none;
           color: #CFD0D1;
           transition: all 0.3s ease-out;
           background: rgba(0, 0, 0, 0.2); }
-        /* line 175, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+        /* line 180, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
         .nav > ul > li > a.active {
           background-image: -webkit-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
           background-image: -o-linear-gradient(bottom, #50C9C3 0%, #96DEDA 100%);
@@ -1620,7 +1633,7 @@ h1 {
           color: #2E323E;
           border-bottom: none;
           text-decoration: none; }
-          /* line 185, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
+          /* line 190, /www/sites/workpen/wwwroot/builds/development/sass/partials/sidebar */
           .nav > ul > li > a.active:hover {
             background: #50C9C3;
             box-shadow: 0px 2px 0px 0px #50C9C3; }

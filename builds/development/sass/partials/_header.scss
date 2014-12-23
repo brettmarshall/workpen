@@ -3,6 +3,7 @@
 	background-image: -webkit-linear-gradient(#424757 0%, #262934 100%);
 	background-image: -o-linear-gradient(#424757 0%, #262934 100%);
 	background-image: linear-gradient(#424757 0%, #262934 100%);
+	height: 6.4rem;
 
 	@include breakpoint($small)	{
 		display: none;
@@ -11,8 +12,11 @@
 
 .nav-icon	{
 	cursor: pointer;
-	padding: $space;
+	padding: 1.7rem 2rem 2rem 2rem;
+	float: left;
+	height: 6.4rem;
 	background: rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.3s ease-out;
 
 	*	{
 		transition: all 0.3s ease-out;
@@ -30,20 +34,20 @@
 		}
 
 		.bar-middle	{
-			-webkit-transform: translateY(8px);
+			-webkit-transform: translateY(0.8rem);
 			
 		}
 
 		.bar-bottom	{
-			-webkit-transform: translateY(16px);
+			-webkit-transform: translateY(1.6rem);
 		}	
 
 	}	
 }
 
 .nav-icon.active-nav	{
-	padding: $space;
-	background: rgba(0, 0, 0, 0.3);
+	padding: 1.6rem 2rem 2rem 2rem;
+	-webkit-transition: all 0.3s ease-in;
 
 	*	{
 		transition: all 0.3s ease-in;
@@ -54,17 +58,17 @@
 		margin-bottom: -7px;
 
 		.bar-top	{
-			-webkit-transform: rotate(45deg) translateY(-5px) translateX(2px);
+			-webkit-transform: rotate(45deg) translateY(-1rem) translateX(-0.2rem);
 
 		}
 
 		.bar-middle	{
-			-webkit-transform: translateY(8px);
+			-webkit-transform: translateY(0.8rem);
 			opacity: 0;
 		}
 
 		.bar-bottom	{
-			-webkit-transform: rotate(-45deg) translateY(16px) translateX(-11px);
+			-webkit-transform: rotate(-45deg) translateY(1.6rem) translateX(-1.1rem);
 		}	
 
 	}	

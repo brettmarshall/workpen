@@ -3,7 +3,12 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab:400,300,700);
 
 html	{
+	font-size: 8px;
 	font-family: $body-font;
+
+	@include breakpoint($small)	{
+		font-size: 10px;
+	}
 }
 
 blockquote	{

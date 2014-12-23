@@ -1,12 +1,23 @@
-<section>
+<section ng-controller="SettingsController">
 	<header class="page-header">
 		<h1>Settings</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nostrum sit est ex, similique quis, suscipit earum alias quaerat ipsum, labore necessitatibus. Voluptatibus illum animi quos deserunt, adipisci voluptates earum.</p>
 	</header>
 
-	<div class="avatar-settings" ng-controller="UploadController">
-		
-		<input type="file" ng-model="model.file" change="upload(model)" />
-					
+	<div class="user-info">
+		<form ng-submit="updateName()" name="userInfo" id="userInfoForm" novalidate>
+			<input type="text" name="firstname" ng-model="firstname" placeholder="First Name" ng-required="true" />
+			<p class="error validationerror" 
+			ng-show="userInfo.firstname.$invalid && userInfo.firstname.$touched">First Name Required</p>
+			<input type="text" name="lastname" ng-model="lastname"placeholder="Last Name" ng-required="true" />
+			<button type="submit" class="btn" ng-disabled="userInfo.$invalid">Save Name</button>
+		</form>
 	</div>
-</section>
+
+	<div class="user-email">
+		<form ng-submit="updateEmail()" name="userEmail" id="userEmailForm" novalidate>
+			<input type="email" name="email" ng-model="email"placeholder="Email Address" ng-required="true"/>
+			<button type="submit" class="btn" ng-disabled="userEmail.$invalid">Save Email</button>
+		</form>
+	</div>	
+</section>	

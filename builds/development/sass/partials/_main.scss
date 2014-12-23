@@ -8,7 +8,10 @@
 
 .main	{
 	width: 100%;
-	overflow-x: hidden;	
+	overflow-x: hidden;
+	position: fixed;
+	min-height: 100%;
+	left: 0;
 	padding: $space;
 	transition: all 0.3s ease-out;
 
@@ -37,7 +40,6 @@
     &.active-nav {
 
         @media (max-width: 767px) {
-            position: relative;
             left: 50%;
             transition: all 0.3s ease-in;
             
